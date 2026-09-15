@@ -1,0 +1,12 @@
+PANDA EXPERT — URUCHOMIENIE SEO
+
+1. Kup domenę i hosting z SSL (https).
+2. Wgraj zawartość tego folderu do katalogu głównego domeny.
+3. W index.html dodaj canonical z prawdziwą domeną (jest komentarz w <head>).
+4. W sitemap.xml zamień TWOJA-DOMENA.PL na prawdziwą domenę.
+5. W robots.txt odkomentuj linię Sitemap i wpisz prawdziwą domenę.
+6. Dodaj domenę do Google Search Console, zweryfikuj własność i prześlij sitemap.xml.
+7. W Search Console użyj „Sprawdzenie adresu URL” dla strony głównej i poproś o indeksowanie.
+8. Po uruchomieniu warto dodać osobne, wartościowe podstrony usług (np. analizy statystyczne, redakcja i formatowanie, konsultacje pracy magisterskiej) zamiast sztucznego powtarzania słów kluczowych.
+
+WAŻNE: sitemap.xml nie będzie poprawny, dopóki nie zostanie wpisana prawdziwa domena.

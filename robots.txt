@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Po zakupie domeny odkomentuj i podmień adres:
+# Sitemap: https://TWOJA-DOMENA.PL/sitemap.xml
