@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Po zakupie domeny zamień TWOJA-DOMENA.PL na właściwy adres -->
   <url>
-    <loc>https://TWOJA-DOMENA.PL/</loc>
+    <loc>https://pandaexpert.pl/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
