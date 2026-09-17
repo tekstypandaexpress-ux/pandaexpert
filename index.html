@@ -207,14 +207,14 @@ height:10%;
 .banner-messenger{
 left:20.1%;
 top:63.5%;
-width:11.8%;
+width:12.7%;
 height:10%;
 }
 
 .banner-facebook{
-left:32.3%;
+left:33.4%;
 top:63.5%;
-width:11.5%;
+width:12.7%;
 height:10%;
 }
 
@@ -239,21 +239,33 @@ letter-spacing:-1.5px;
 line-height:1.12;
 }
 
+/* TEKST BEZ DZIELENIA WYRAZÓW */
+
 .sub{
 font-size:19px;
 width:100%;
 max-width:none;
 margin:0 0 36px;
-text-align:justify;
-text-justify:inter-word;
-hyphens:auto;
+text-align:left;
+text-justify:auto;
+hyphens:none;
+-webkit-hyphens:none;
+-ms-hyphens:none;
+word-break:normal;
+overflow-wrap:normal;
 }
 
 .section p{
-text-align:justify;
-text-justify:inter-word;
-hyphens:auto;
+text-align:left;
+text-justify:auto;
+hyphens:none;
+-webkit-hyphens:none;
+-ms-hyphens:none;
+word-break:normal;
+overflow-wrap:normal;
 }
+
+/* KAFELKI */
 
 .cards{
 display:grid;
@@ -277,10 +289,18 @@ font-size:34px;
 font-size:22px;
 margin:8px 0;
 line-height:1.25;
+hyphens:none;
+-webkit-hyphens:none;
+word-break:normal;
 }
 
 .card p{
-text-align:justify;
+text-align:left;
+hyphens:none;
+-webkit-hyphens:none;
+-ms-hyphens:none;
+word-break:normal;
+overflow-wrap:normal;
 }
 
 .green{
@@ -315,7 +335,12 @@ padding:22px;
 }
 
 .step p{
-text-align:justify;
+text-align:left;
+hyphens:none;
+-webkit-hyphens:none;
+-ms-hyphens:none;
+word-break:normal;
+overflow-wrap:normal;
 }
 
 .num{
@@ -369,7 +394,7 @@ color:#111;
 .email{
 font-size:clamp(20px,3vw,31px);
 font-weight:1000;
-word-break:break-word;
+overflow-wrap:anywhere;
 }
 
 .note{
@@ -480,6 +505,9 @@ font-size:36px;
 line-height:1.15;
 letter-spacing:-1px;
 margin-bottom:22px;
+hyphens:none;
+-webkit-hyphens:none;
+word-break:normal;
 }
 
 .sub{
@@ -487,15 +515,31 @@ font-size:18px;
 line-height:1.55;
 width:100%;
 max-width:none;
-text-align:justify;
-text-justify:inter-word;
-hyphens:auto;
+text-align:left;
+text-justify:auto;
+hyphens:none;
+-webkit-hyphens:none;
+-ms-hyphens:none;
+word-break:normal;
+overflow-wrap:normal;
 }
 
 .section p{
-text-align:justify;
-text-justify:inter-word;
-hyphens:auto;
+text-align:left;
+text-justify:auto;
+hyphens:none;
+-webkit-hyphens:none;
+-ms-hyphens:none;
+word-break:normal;
+overflow-wrap:normal;
+}
+
+.card p{
+text-align:left;
+hyphens:none;
+-webkit-hyphens:none;
+word-break:normal;
+overflow-wrap:normal;
 }
 
 .cards{
@@ -558,12 +602,7 @@ height:auto;
 max-width:100%;
 }
 
-/*
-UWAGA:
-Na telefonie wyświetla się panda-mobile.png.
-Poniższe pola są niewidoczne i sprawiają,
-że przyciski znajdujące się NA GRAFICE są klikalne.
-*/
+/* KLIKALNE POLA TELEFON */
 
 /* E-MAIL */
 
@@ -728,10 +767,10 @@ Panda Expert oferuje konsultacje, redakcję, korektę, formatowanie oraz wsparci
 
 <div class="icon">📚</div>
 
-<h3>Konsultacje przy pracach</h3>
+<h3>Pomoc w pisaniu prac</h3>
 
 <p>
-Pomoc w planowaniu pracy, tworzeniu struktury, metodologii, doborze literatury, interpretacji wymagań oraz przygotowaniu do prezentacji i obrony.
+Pomoc w pisaniu prac, tworzeniu struktury, metodologii, doborze literatury, interpretacji wymagań oraz przygotowaniu do prezentacji i obrony.
 </p>
 
 </article>
@@ -903,7 +942,7 @@ Przed rozpoczęciem współpracy ustalamy zakres pomocy, termin oraz sposób kom
 <h3>Na czym polega wsparcie akademickie?</h3>
 
 <p>
-Wsparcie może obejmować konsultacje dotyczące planu i struktury pracy, metodologii, doboru literatury, analizy danych, interpretacji wyników, redakcji, korekty oraz formatowania dokumentu.
+Wsparcie może obejmować konsultacje dotyczące pisania i struktury pracy, metodologii, doboru literatury, analizy danych, interpretacji wyników, redakcji, korekty oraz formatowania dokumentu.
 </p>
 
 </article>
@@ -913,7 +952,7 @@ Wsparcie może obejmować konsultacje dotyczące planu i struktury pracy, metodo
 <h3>Czy pomagacie przy pracach licencjackich i magisterskich?</h3>
 
 <p>
-Tak. Zakres konsultacji może obejmować między innymi plan, strukturę, metodologię, analizę wyników, redakcję, korektę, formatowanie oraz przygotowanie do prezentacji i obrony.
+Tak. Zakres konsultacji może obejmować między innymi pisanie, strukturę, metodologię, analizę wyników, redakcję, korektę, formatowanie oraz przygotowanie do prezentacji i obrony.
 </p>
 
 </article>
