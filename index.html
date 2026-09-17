@@ -421,28 +421,48 @@ align-items:start;
 background:white;
 border:3px solid #111;
 border-radius:18px;
-padding:24px;
+padding:30px;
 box-shadow:6px 6px 0 #111;
 }
 
-.review-form textarea{
-width:100%;
-min-height:130px;
-padding:14px;
-border:2px solid #111;
-border-radius:10px;
-font:inherit;
+.review-form h3{
+font-size:25px;
+margin:0 0 12px;
 }
 
-.stars{
-font-size:28px;
-letter-spacing:3px;
-margin:8px 0 16px;
+.review-form p{
+margin:0 0 22px;
+}
+
+.review-stars{
+font-size:34px;
+letter-spacing:4px;
+margin:4px 0 18px;
+}
+
+.review-button{
+display:block;
+width:100%;
+background:var(--yellow);
+border:3px solid #111;
+box-shadow:5px 5px 0 #111;
+padding:16px 18px;
+font-size:18px;
+font-weight:1000;
+text-align:center;
+border-radius:10px;
+transition:.15s ease;
+}
+
+.review-button:hover{
+transform:translate(2px,2px);
+box-shadow:3px 3px 0 #111;
 }
 
 .review-note{
 font-size:14px;
-opacity:.8;
+opacity:.75;
+margin-top:18px !important;
 }
 
 /* FOOTER */
@@ -604,16 +624,12 @@ max-width:100%;
 
 /* KLIKALNE POLA TELEFON */
 
-/* E-MAIL */
-
 .banner-email{
 left:8%;
 top:27%;
 width:40%;
 height:7%;
 }
-
-/* MESSENGER */
 
 .banner-messenger{
 left:8%;
@@ -622,8 +638,6 @@ width:40%;
 height:7%;
 }
 
-/* FACEBOOK */
-
 .banner-facebook{
 left:8%;
 top:42%;
@@ -631,13 +645,20 @@ width:40%;
 height:7%;
 }
 
-/* DOLNY KONTAKT */
-
 .banner-contact{
 left:8%;
 top:90%;
 width:84%;
 height:6%;
+}
+
+.review-form{
+padding:22px;
+}
+
+.review-button{
+font-size:16px;
+padding:15px 12px;
 }
 
 }
@@ -1035,19 +1056,26 @@ Liczy się dla nas szczera opinia, a nie dane autora.
 
 <div class="review-form">
 
-<h3>Zostaw swoją opinię</h3>
+<h3>⭐ Zostaw swoją opinię</h3>
 
-<div class="stars">
+<div class="review-stars">
 ☆ ☆ ☆ ☆ ☆
 </div>
 
-<textarea placeholder="Napisz swoją opinię..."></textarea>
-
 <p>
-<label>
-<input type="checkbox" checked>
-Chcę pozostać anonimowy/a
-</label>
+Kliknij poniżej, aby dodać anonimową opinię. Otworzy się formularz, przez który Twoja wiadomość trafi bezpośrednio do naszej tablicy opinii.
+</p>
+
+<a
+class="review-button"
+href="https://padlet.com/tekstypandaexpress/submission-request/8wOpvY2Dn0VBb6AY"
+target="_blank"
+rel="noopener noreferrer">
+⭐ DODAJ SWOJĄ OPINIĘ
+</a>
+
+<p class="review-note">
+Dodanie opinii nie wymaga przeglądania całej tablicy.
 </p>
 
 </div>
