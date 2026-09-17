@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pl">
+
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -7,7 +8,6 @@
 <title>Pomoc przy pisaniu prac licencjackich i magisterskich | Panda Expert</title>
 
 <meta name="description" content="Konsultacje, redakcja, korekta, formatowanie, analiza danych i wsparcie akademickie – Panda Expert.">
-
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="author" content="Panda Expert">
 <meta name="theme-color" content="#1f7a31">
@@ -94,9 +94,7 @@ margin:auto;
 padding:0 22px;
 }
 
-/* =========================
-   MENU
-   ========================= */
+/* MENU */
 
 header{
 position:sticky;
@@ -165,9 +163,7 @@ box-shadow:3px 3px 0 #111;
 background:white;
 }
 
-/* =========================
-   BANER GŁÓWNY
-   ========================= */
+/* BANER */
 
 .panda-banner{
 position:relative;
@@ -192,8 +188,6 @@ margin:0;
 padding:0;
 }
 
-/* KLIKALNE POLA */
-
 .banner-hotspot{
 position:absolute;
 display:block;
@@ -201,7 +195,7 @@ z-index:5;
 cursor:pointer;
 }
 
-/* DESKTOP - E-MAIL */
+/* KLIKALNE POLA DESKTOP */
 
 .banner-email{
 left:6.8%;
@@ -210,16 +204,12 @@ width:12.7%;
 height:10%;
 }
 
-/* DESKTOP - MESSENGER */
-
 .banner-messenger{
 left:20.1%;
 top:63.5%;
 width:11.8%;
 height:10%;
 }
-
-/* DESKTOP - FACEBOOK */
 
 .banner-facebook{
 left:32.3%;
@@ -228,8 +218,6 @@ width:11.5%;
 height:10%;
 }
 
-/* DESKTOP - DOLNY KONTAKT */
-
 .banner-contact{
 left:6.8%;
 top:77%;
@@ -237,9 +225,7 @@ width:33.2%;
 height:10%;
 }
 
-/* =========================
-   SEKCJE
-   ========================= */
+/* SEKCJE */
 
 .section{
 padding:78px 0;
@@ -260,11 +246,13 @@ max-width:none;
 margin:0 0 36px;
 text-align:justify;
 text-justify:inter-word;
+hyphens:auto;
 }
 
 .section p{
 text-align:justify;
 text-justify:inter-word;
+hyphens:auto;
 }
 
 .cards{
@@ -307,9 +295,7 @@ background:#e7f3ff;
 background:#fff7bf;
 }
 
-/* =========================
-   JAK DZIAŁAMY
-   ========================= */
+/* JAK DZIAŁAMY */
 
 .process{
 background:var(--ink);
@@ -344,9 +330,7 @@ font-weight:1000;
 margin-bottom:12px;
 }
 
-/* =========================
-   NARZĘDZIA
-   ========================= */
+/* NARZĘDZIA */
 
 .tools{
 display:flex;
@@ -362,9 +346,7 @@ border-radius:999px;
 font-weight:800;
 }
 
-/* =========================
-   KONTAKT
-   ========================= */
+/* KONTAKT */
 
 .contact{
 background:var(--green);
@@ -395,9 +377,7 @@ font-size:14px;
 opacity:.9;
 }
 
-/* =========================
-   OPINIE
-   ========================= */
+/* OPINIE */
 
 .reviews{
 background:#e8f6e9;
@@ -440,9 +420,7 @@ font-size:14px;
 opacity:.8;
 }
 
-/* =========================
-   FOOTER
-   ========================= */
+/* FOOTER */
 
 footer{
 background:#0b0f12;
@@ -457,9 +435,7 @@ gap:20px;
 flex-wrap:wrap;
 }
 
-/* =========================
-   TABLETY
-   ========================= */
+/* TABLETY */
 
 @media(max-width:850px){
 
@@ -486,9 +462,7 @@ font-size:17px;
 
 }
 
-/* =========================
-   TELEFONY
-   ========================= */
+/* TELEFONY */
 
 @media(max-width:520px){
 
@@ -513,11 +487,15 @@ font-size:18px;
 line-height:1.55;
 width:100%;
 max-width:none;
+text-align:justify;
+text-justify:inter-word;
+hyphens:auto;
 }
 
 .section p{
 text-align:justify;
 text-justify:inter-word;
+hyphens:auto;
 }
 
 .cards{
@@ -558,15 +536,7 @@ font-size:13px;
 white-space:nowrap;
 }
 
-/* =========================
-   MOBILNY BANER
-
-   Telefon używa osobnego:
-   panda-mobile.png
-
-   Dzięki temu cała pionowa
-   grafika mieści się na ekranie.
-   ========================= */
+/* MOBILNY BANER */
 
 .panda-banner{
 width:100%;
@@ -588,51 +558,52 @@ height:auto;
 max-width:100%;
 }
 
-/* =========================
-   KLIKALNE POLA TELEFON
-   ========================= */
+/*
+UWAGA:
+Na telefonie wyświetla się panda-mobile.png.
+Poniższe pola są niewidoczne i sprawiają,
+że przyciski znajdujące się NA GRAFICE są klikalne.
+*/
 
-/* NAPISZ E-MAIL */
+/* E-MAIL */
 
 .banner-email{
-left:8.5%;
-top:19.5%;
-width:36%;
-height:6.5%;
+left:8%;
+top:27%;
+width:40%;
+height:7%;
 }
 
 /* MESSENGER */
 
 .banner-messenger{
-left:8.5%;
-top:26.2%;
-width:36%;
-height:6.5%;
+left:8%;
+top:34.5%;
+width:40%;
+height:7%;
 }
 
 /* FACEBOOK */
 
 .banner-facebook{
-left:8.5%;
-top:32.9%;
-width:36%;
-height:6.5%;
+left:8%;
+top:42%;
+width:40%;
+height:7%;
 }
 
-/* DOLNY KONTAKT E-MAIL */
+/* DOLNY KONTAKT */
 
 .banner-contact{
-left:8.5%;
-top:87%;
-width:83%;
-height:6.5%;
+left:8%;
+top:90%;
+width:84%;
+height:6%;
 }
 
 }
 
-/* =========================
-   BARDZO MAŁE TELEFONY
-   ========================= */
+/* BARDZO MAŁE TELEFONY */
 
 @media(max-width:380px){
 
@@ -693,20 +664,16 @@ Napisz do nas
 
 <main id="start">
 
-<!-- =========================
-     BANER
-     ========================= -->
+<!-- BANER -->
 
 <section class="panda-banner" aria-label="Panda Expert">
 
 <picture>
 
-<!-- TELEFON -->
 <source
 media="(max-width:520px)"
 srcset="panda-mobile.png">
 
-<!-- KOMPUTER -->
 <img
 src="panda-akcja.png"
 alt="Panda Expert – wsparcie akademickie">
@@ -743,9 +710,7 @@ aria-label="Kontakt e-mail">
 
 </section>
 
-<!-- =========================
-     OFERTA
-     ========================= -->
+<!-- W CZYM POMAGAMY -->
 
 <section class="section" id="oferta">
 
@@ -801,9 +766,7 @@ Redakcja i korekta dokumentów akademickich, formatowanie tekstu, uporządkowani
 
 </section>
 
-<!-- =========================
-     NARZĘDZIA
-     ========================= -->
+<!-- NARZĘDZIA -->
 
 <section class="section" id="narzedzia">
 
@@ -835,9 +798,7 @@ Pomagamy w pracy z popularnym oprogramowaniem wykorzystywanym podczas studiów, 
 
 </section>
 
-<!-- =========================
-     JAK DZIAŁAMY
-     ========================= -->
+<!-- JAK DZIAŁAMY -->
 
 <section class="section process" id="jak">
 
@@ -852,51 +813,27 @@ Prosto i konkretnie – najpierw poznajemy temat i zakres potrzebnego wsparcia, 
 <div class="steps">
 
 <div class="step">
-
 <div class="num">1</div>
-
 <b>Opisujesz potrzebę</b>
-
-<p>
-Napisz, czego dotyczy praca lub projekt, jaki jest zakres i termin.
-</p>
-
+<p>Napisz, czego dotyczy praca lub projekt, jaki jest zakres i termin.</p>
 </div>
 
 <div class="step">
-
 <div class="num">2</div>
-
 <b>Analizujemy temat</b>
-
-<p>
-Sprawdzamy wymagania i proponujemy odpowiednią formę wsparcia.
-</p>
-
+<p>Sprawdzamy wymagania i proponujemy odpowiednią formę wsparcia.</p>
 </div>
 
 <div class="step">
-
 <div class="num">3</div>
-
 <b>Ustalamy szczegóły</b>
-
-<p>
-Potwierdzamy zakres konsultacji, redakcji, analizy lub innych potrzebnych działań.
-</p>
-
+<p>Potwierdzamy zakres konsultacji, redakcji, analizy lub innych potrzebnych działań.</p>
 </div>
 
 <div class="step">
-
 <div class="num">4</div>
-
 <b>Działamy</b>
-
-<p>
-Pozostajemy w kontakcie i wspieramy Cię na ustalonym etapie.
-</p>
-
+<p>Pozostajemy w kontakcie i wspieramy Cię na ustalonym etapie.</p>
 </div>
 
 </div>
@@ -905,9 +842,7 @@ Pozostajemy w kontakcie i wspieramy Cię na ustalonym etapie.
 
 </section>
 
-<!-- =========================
-     DLACZEGO PANDA
-     ========================= -->
+<!-- DLACZEGO PANDA -->
 
 <section class="section">
 
@@ -953,9 +888,7 @@ Przed rozpoczęciem współpracy ustalamy zakres pomocy, termin oraz sposób kom
 
 </section>
 
-<!-- =========================
-     FAQ
-     ========================= -->
+<!-- FAQ -->
 
 <section class="section" id="faq">
 
@@ -1031,9 +964,7 @@ Napisz na <b>teksty.panda.express@gmail.com</b> i podaj temat, zakres potrzebneg
 
 </section>
 
-<!-- =========================
-     OPINIE
-     ========================= -->
+<!-- OPINIE -->
 
 <section class="section reviews" id="opinie">
 
@@ -1080,16 +1011,6 @@ Chcę pozostać anonimowy/a
 </label>
 </p>
 
-<a
-class="cta"
-href="mailto:teksty.panda.express@gmail.com?subject=Anonimowa%20opinia%20-%20Panda%20Expert">
-🐼 Dodaj opinię
-</a>
-
-<p class="review-note">
-Kliknięcie przycisku otworzy wiadomość e-mail. Dane nie są automatycznie publikowane na stronie.
-</p>
-
 </div>
 
 </div>
@@ -1098,9 +1019,7 @@ Kliknięcie przycisku otworzy wiadomość e-mail. Dane nie są automatycznie pub
 
 </section>
 
-<!-- =========================
-     KONTAKT
-     ========================= -->
+<!-- KONTAKT -->
 
 <section class="section contact" id="kontakt">
 
