@@ -179,6 +179,11 @@ background:#ffd51e;
 border-bottom:4px solid #111;
 }
 
+.panda-banner picture{
+display:block;
+width:100%;
+}
+
 .panda-banner img{
 display:block;
 width:100%;
@@ -196,7 +201,7 @@ z-index:5;
 cursor:pointer;
 }
 
-/* E-MAIL */
+/* DESKTOP - E-MAIL */
 
 .banner-email{
 left:6.8%;
@@ -205,7 +210,7 @@ width:12.7%;
 height:10%;
 }
 
-/* MESSENGER */
+/* DESKTOP - MESSENGER */
 
 .banner-messenger{
 left:20.1%;
@@ -214,7 +219,7 @@ width:11.8%;
 height:10%;
 }
 
-/* FACEBOOK */
+/* DESKTOP - FACEBOOK */
 
 .banner-facebook{
 left:32.3%;
@@ -223,7 +228,7 @@ width:11.5%;
 height:10%;
 }
 
-/* DOLNY E-MAIL */
+/* DESKTOP - DOLNY KONTAKT */
 
 .banner-contact{
 left:6.8%;
@@ -512,6 +517,7 @@ max-width:none;
 
 .section p{
 text-align:justify;
+text-justify:inter-word;
 }
 
 .cards{
@@ -522,7 +528,7 @@ grid-template-columns:1fr;
 grid-template-columns:1fr;
 }
 
-/* MENU */
+/* MENU TELEFON */
 
 .nav{
 height:68px;
@@ -552,65 +558,81 @@ font-size:13px;
 white-space:nowrap;
 }
 
-/*
-MOBILNY BANER
+/* =========================
+   MOBILNY BANER
 
-Na telefonie obraz jest powiększony.
-Nie zmniejszamy całego szerokiego banera
-do szerokości telefonu.
-*/
+   Telefon używa osobnego:
+   panda-mobile.png
+
+   Dzięki temu cała pionowa
+   grafika mieści się na ekranie.
+   ========================= */
 
 .panda-banner{
-height:330px;
+width:100%;
+height:auto;
 overflow:hidden;
 position:relative;
 }
 
-.panda-banner img{
-position:absolute;
-height:330px;
-width:auto;
-max-width:none;
-left:0;
-top:0;
+.panda-banner picture{
+display:block;
+width:100%;
 }
 
-/*
-Hotspoty mobilne są przeliczone względem
-powiększonego obrazu.
-*/
+.panda-banner img{
+position:static;
+display:block;
+width:100%;
+height:auto;
+max-width:100%;
+}
+
+/* =========================
+   KLIKALNE POLA TELEFON
+   ========================= */
+
+/* NAPISZ E-MAIL */
 
 .banner-email{
-left:6.8%;
-top:63.5%;
-width:25%;
-height:10%;
+left:8.5%;
+top:19.5%;
+width:36%;
+height:6.5%;
 }
+
+/* MESSENGER */
 
 .banner-messenger{
-left:32%;
-top:63.5%;
-width:23%;
-height:10%;
+left:8.5%;
+top:26.2%;
+width:36%;
+height:6.5%;
 }
+
+/* FACEBOOK */
 
 .banner-facebook{
-left:56%;
-top:63.5%;
-width:23%;
-height:10%;
+left:8.5%;
+top:32.9%;
+width:36%;
+height:6.5%;
 }
+
+/* DOLNY KONTAKT E-MAIL */
 
 .banner-contact{
-left:6.8%;
-top:77%;
-width:65%;
-height:10%;
+left:8.5%;
+top:87%;
+width:83%;
+height:6.5%;
 }
 
 }
 
-/* BARDZO MAŁE TELEFONY */
+/* =========================
+   BARDZO MAŁE TELEFONY
+   ========================= */
 
 @media(max-width:380px){
 
@@ -677,9 +699,19 @@ Napisz do nas
 
 <section class="panda-banner" aria-label="Panda Expert">
 
+<picture>
+
+<!-- TELEFON -->
+<source
+media="(max-width:520px)"
+srcset="panda-mobile.png">
+
+<!-- KOMPUTER -->
 <img
 src="panda-akcja.png"
 alt="Panda Expert – wsparcie akademickie">
+
+</picture>
 
 <a
 class="banner-hotspot banner-email"
@@ -948,17 +980,17 @@ Wsparcie może obejmować konsultacje dotyczące planu i struktury pracy, metodo
 <h3>Czy pomagacie przy pracach licencjackich i magisterskich?</h3>
 
 <p>
-Tak. Zakres konsultacji może obejmować między innymi plan, strukturę, metodologię, analizę wyników, redakcję, korektę, formatowanie oraz przygotowanie do prezentacji.
+Tak. Zakres konsultacji może obejmować między innymi plan, strukturę, metodologię, analizę wyników, redakcję, korektę, formatowanie oraz przygotowanie do prezentacji i obrony.
 </p>
 
 </article>
 
 <article class="card">
 
-<h3>Czy wykonujecie analizy statystyczne?</h3>
+<h3>Czy pomagacie w analizie danych?</h3>
 
 <p>
-Pomagamy w analizie danych oraz pracy z narzędziami takimi jak SPSS, JASP, Jamovi, RStudio i Excel. Zakres wsparcia zależy od rodzaju danych, metodologii i celu badania.
+Tak. Pomagamy w analizach statystycznych z wykorzystaniem narzędzi takich jak SPSS, JASP, Jamovi, RStudio i Excel. Zakres wsparcia zależy od rodzaju danych, metodologii i celu badania.
 </p>
 
 </article>
