@@ -21,13 +21,13 @@
 <meta property="og:site_name" content="Panda Expert">
 <meta property="og:title" content="Pomoc przy pisaniu prac licencjackich i magisterskich | Panda Expert">
 <meta property="og:description" content="Wsparcie przy pisaniu prac licencjackich, magisterskich i inżynierskich: konsultacje, redakcja, korekta, formatowanie i analiza danych.">
-<meta property="og:image" content="https://pandaexpert.pl/panda-hero.jpg">
+<meta property="og:image" content="https://pandaexpert.pl/panda-akcja.png">
 <meta property="og:image:alt" content="Panda Expert – wsparcie akademickie">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Pomoc przy pisaniu prac | Panda Expert">
 <meta name="twitter:description" content="Konsultacje akademickie, redakcja, korekta, formatowanie i analiza danych.">
-<meta name="twitter:image" content="https://pandaexpert.pl/panda-hero.jpg">
+<meta name="twitter:image" content="https://pandaexpert.pl/panda-akcja.png">
 
 <script type="application/ld+json">
 {
@@ -36,7 +36,7 @@
   "@id": "https://pandaexpert.pl/#business",
   "name": "Panda Expert",
   "url": "https://pandaexpert.pl/",
-  "image": "https://pandaexpert.pl/panda-hero.jpg",
+  "image": "https://pandaexpert.pl/panda-akcja.png",
   "logo": "https://pandaexpert.pl/panda-logo.jpg",
   "description": "Wsparcie akademickie przy pisaniu prac licencjackich, magisterskich i inżynierskich. Konsultacje, redakcja, korekta, formatowanie i analiza danych.",
   "email": "teksty.panda.express@gmail.com",
@@ -151,156 +151,74 @@ box-shadow:3px 3px 0 #111
 
 .secondary{background:white}
 
-/* HERO */
+/* =========================
+   NOWY BANER GŁÓWNY
+   ========================= */
 
-.hero{
-padding:34px 0 48px;
-background:
-radial-gradient(#f0c900 1.2px,transparent 1.2px),
-linear-gradient(135deg,#ffe532,#ffc919);
-background-size:12px 12px,auto;
+.panda-banner{
+position:relative;
+width:100%;
+margin:0;
+padding:0;
+overflow:hidden;
+background:#ffd51e;
 border-bottom:4px solid #111
 }
 
-.hero-grid{
-display:grid;
-grid-template-columns:1.02fr .98fr;
-gap:42px;
-align-items:center
-}
-
-.hero h1{
-font-size:clamp(38px,5.7vw,68px);
-line-height:.92;
-margin:18px 0;
-text-transform:uppercase;
-letter-spacing:-2.5px
-}
-
-.hero h1 .degree-line{
-display:inline-block;
-font-size:clamp(16px,2vw,27px);
-line-height:1.1;
-letter-spacing:-.7px;
-white-space:nowrap;
-background:#fff;
-border:3px solid #111;
-border-radius:12px;
-padding:9px 13px;
-box-shadow:5px 5px 0 #111;
-text-shadow:none;
-margin-top:8px
-}
-
-/* PRZYCISKI POD HASŁEM */
-
-.actions{
-display:flex;
-gap:12px;
-flex-wrap:wrap;
-margin:25px 0 20px
-}
-
-.actions .cta{
-padding:12px 16px
-}
-
-.hero-email{
-display:inline-block;
-background:#fff;
-border:3px solid #111;
-border-radius:10px;
-padding:9px 13px;
-font-weight:1000;
-word-break:break-word
-}
-
-/* GRAFIKA */
-
-.hero-art-wrap{
-display:flex;
-flex-direction:column;
-gap:14px;
-min-width:0
-}
-
-.degree-title{
-background:#fff;
-border:4px solid #111;
-border-radius:16px;
-padding:14px 12px;
-box-shadow:6px 6px 0 #111;
-text-align:center;
-font-size:clamp(22px,2.7vw,36px);
-font-weight:1000;
-line-height:1.05;
-text-transform:uppercase
-}
-
-.degree-title strong{
+.panda-banner img{
 display:block;
-color:var(--red)
+width:100%;
+height:auto;
+margin:0;
+padding:0
 }
 
-.hero-art{
-background:white;
-border:4px solid #111;
-border-radius:24px;
-overflow:hidden;
-box-shadow:10px 10px 0 #111;
-transform:rotate(1deg)
-}
+/* NIEWIDOCZNE KLIKALNE POLA NA GRAFICE */
 
-.hero-art img{
+.banner-hotspot{
+position:absolute;
 display:block;
-width:100%
+z-index:5;
+cursor:pointer
 }
 
-/* DWA BOKSY POD HERO */
-
-.hero-info-grid{
-display:grid;
-grid-template-columns:1.45fr .85fr;
-gap:22px;
-margin-top:34px;
-align-items:stretch
+/* NAPISZ E-MAIL */
+.banner-email{
+left:6.8%;
+top:63.5%;
+width:12.7%;
+height:10%
 }
 
-.hero-offer,
-.hero-fields{
-background:#fff;
-border:3px solid #111;
-border-radius:16px;
-padding:20px;
-box-shadow:6px 6px 0 #111;
-font-weight:800
+/* MESSENGER */
+.banner-messenger{
+left:20.1%;
+top:63.5%;
+width:11.8%;
+height:10%
 }
 
-/* ZMNIEJSZONY LEWY BOKS */
-
-.hero-offer{
-font-size:15px;
-line-height:1.45;
-padding:17px 18px
+/* FACEBOOK */
+.banner-facebook{
+left:32.3%;
+top:63.5%;
+width:11.5%;
+height:10%
 }
 
-.hero-offer b{
-font-size:16px
-}
-
-/* WYRÓWNANY PRAWY BOKS */
-
-.hero-fields{
-font-size:17px;
-line-height:1.55;
-text-align:justify;
-text-justify:inter-word;
-display:block
+/* DOLNY ADRES E-MAIL */
+.banner-contact{
+left:6.8%;
+top:77%;
+width:33.2%;
+height:10%
 }
 
 /* SEKCJE */
 
-.section{padding:78px 0}
+.section{
+padding:78px 0
+}
 
 .section h2{
 font-size:clamp(34px,5vw,54px);
@@ -329,16 +247,26 @@ padding:26px;
 box-shadow:6px 6px 0 #111
 }
 
-.icon{font-size:34px}
+.icon{
+font-size:34px
+}
 
 .card h3{
 font-size:22px;
 margin:8px 0
 }
 
-.green{background:#e8f6e9}
-.blue{background:#e7f3ff}
-.yellow{background:#fff7bf}
+.green{
+background:#e8f6e9
+}
+
+.blue{
+background:#e7f3ff
+}
+
+.yellow{
+background:#fff7bf
+}
 
 /* JAK DZIAŁAMY */
 
@@ -433,17 +361,6 @@ gap:20px;
 flex-wrap:wrap
 }
 
-/* DISCLAIMER */
-
-.disclaimer{
-margin-top:26px;
-padding:16px;
-border-left:5px solid var(--yellow);
-background:#fffbe1;
-color:#111;
-border-radius:8px
-}
-
 /* OPINIE */
 
 .reviews{
@@ -491,32 +408,26 @@ opacity:.8
 
 @media(max-width:850px){
 
-nav{display:none}
+nav{
+display:none
+}
 
-.hero-grid,
 .contactbox,
 .review-grid{
 grid-template-columns:1fr
 }
 
-.hero-info-grid{
+.cards{
 grid-template-columns:1fr
 }
 
-.cards{grid-template-columns:1fr}
-
-.steps{grid-template-columns:1fr 1fr}
-
-.hero{padding-top:42px}
-
-.hero-art{transform:none}
-
-.degree-title{
-font-size:clamp(20px,6vw,29px);
-padding:11px 8px
+.steps{
+grid-template-columns:1fr 1fr
 }
 
-.brand b{font-size:17px}
+.brand b{
+font-size:17px
+}
 
 }
 
@@ -524,15 +435,8 @@ padding:11px 8px
 
 @media(max-width:520px){
 
-.steps{grid-template-columns:1fr}
-
-.hero h1{letter-spacing:-2px}
-
-.hero h1 .degree-line{
-font-size:clamp(12px,3.7vw,17px);
-letter-spacing:-.45px;
-white-space:normal;
-padding:7px 8px
+.steps{
+grid-template-columns:1fr
 }
 
 .wrap{
@@ -540,21 +444,22 @@ padding-left:16px;
 padding-right:16px
 }
 
-.section{padding:56px 0}
-
-.actions{
-display:grid;
-grid-template-columns:1fr;
-gap:12px
+.section{
+padding:56px 0
 }
 
-.actions .cta{
-text-align:center;
-width:100%
+.nav{
+height:68px
 }
 
-.hero-info-grid{
-margin-top:26px
+.brand img{
+width:46px;
+height:46px
+}
+
+header .cta{
+padding:10px 12px;
+font-size:13px
 }
 
 }
@@ -565,15 +470,18 @@ margin-top:26px
 <body>
 
 <header>
+
 <div class="wrap nav">
 
 <a class="brand" href="#start">
+
 <img src="panda-logo.jpg" alt="Panda Expert">
 
 <div>
 <b>PANDA EXPERT</b>
 <small>Wsparcie Akademickie</small>
 </div>
+
 </a>
 
 <nav>
@@ -584,122 +492,62 @@ margin-top:26px
 <a href="#kontakt">Kontakt</a>
 </nav>
 
-<a class="cta" href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert">
+<a class="cta"
+href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert">
 Napisz do nas
 </a>
 
 </div>
+
 </header>
 
 <main id="start">
 
-<!-- HERO -->
+<!-- =========================
+     NOWY BANER Z PANDĄ
+     ========================= -->
 
-<section class="hero">
+<section class="panda-banner" aria-label="Panda Expert">
 
-<div class="wrap">
+<img
+src="panda-akcja.png"
+alt="Panda Expert – wsparcie akademickie">
 
-<div class="hero-grid">
+<!-- KLIKALNY NAPISZ E-MAIL -->
 
-<div>
-
-<h1>
-Wsparcie przy<br>
-pracach<br>
-<span class="degree-line">
-🎓 licencjackich, magisterskich i inżynierskich 🎓
-</span>
-</h1>
-
-<!-- PRZYCISKI -->
-
-<div class="actions">
-
-<a class="cta"
-href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert">
-📧 NAPISZ E-MAIL
+<a
+class="banner-hotspot banner-email"
+href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert"
+aria-label="Napisz e-mail">
 </a>
 
-<a class="cta secondary"
+<!-- KLIKALNY MESSENGER -->
+
+<a
+class="banner-hotspot banner-messenger"
 href="https://m.me/PisaniePrac.PandaExpert"
 target="_blank"
-rel="noopener noreferrer">
-💬 MESSENGER
+rel="noopener noreferrer"
+aria-label="Messenger">
 </a>
 
-<a class="cta secondary"
+<!-- KLIKALNY FACEBOOK -->
+
+<a
+class="banner-hotspot banner-facebook"
 href="https://www.facebook.com/PisaniePrac.PandaExpert"
 target="_blank"
-rel="noopener noreferrer">
-🔵 FACEBOOK
+rel="noopener noreferrer"
+aria-label="Facebook">
 </a>
 
-</div>
+<!-- KLIKALNY ADRES E-MAIL NA DOLE GRAFIKI -->
 
-<div class="hero-email">
-<span style="color:#e62d20;font-weight:900;">KONTAKT:</span>
-📧 teksty.panda.express@gmail.com
-</div>
-
-</div>
-
-<div class="hero-art-wrap">
-
-<div class="degree-title">
-<strong>
-REDAKCJA<br>
-KOREKTA<br>
-<span style="font-size:.78em;">FORMATOWANIE</span>
-</strong>
-</div>
-
-<div class="hero-art">
-<img src="panda-hero.jpg" alt="Panda Expert – wsparcie akademickie">
-</div>
-
-</div>
-
-</div>
-
-<!-- DWA BOKSY OBOK SIEBIE -->
-
-<div class="hero-info-grid">
-
-<!-- LEWY BOKS -->
-
-<div class="hero-offer">
-
-<b>Pomoc przy pisaniu prac i wsparcie akademickie obejmują m.in.:</b>
-
-<br><br>
-
-📚 pomoc w procesie tworzenia prac licencjackich, magisterskich i inżynierskich<br>
-
-📝 wsparcie w planowaniu struktury, metodologii i kolejnych etapów pracy<br>
-
-📊 analizy statystyczne, biznesowe i techniczne<br>
-
-📈 projekty inżynierskie i badawcze<br>
-
-📑 prezentacje, raporty i materiały pomocnicze<br>
-
-✍️ korektę, redakcję i formatowanie prac oraz dokumentów<br>
-
-💻 wsparcie w wykorzystaniu specjalistycznego oprogramowania
-
-</div>
-
-<!-- PRAWY BOKS -->
-
-<div class="hero-fields">
-
-🎓 Działamy w zakresie większości kierunków studiów, m.in. humanistycznych, społecznych, ekonomicznych, medycznych, technicznych, informatycznych i przyrodniczych.
-
-</div>
-
-</div>
-
-</div>
+<a
+class="banner-hotspot banner-contact"
+href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert"
+aria-label="Kontakt e-mail">
+</a>
 
 </section>
 
@@ -752,13 +600,6 @@ Redakcja i korekta prac licencjackich, magisterskich i inżynierskich, formatowa
 </p>
 
 </article>
-
-</div>
-
-<div class="disclaimer">
-
-<b>Ważne:</b>
-Panda Expert świadczy usługi konsultacyjne, edukacyjne, redakcyjne i analityczne. Materiały oraz konsultacje służą nauce i wsparciu klienta. Nie oferujemy podszywania się pod autora ani przedstawiania cudzej pracy jako własnej.
 
 </div>
 
@@ -1029,22 +870,15 @@ Liczy się dla nas szczera opinia, a nie dane autora.
 <textarea placeholder="Napisz swoją opinię..."></textarea>
 
 <p>
-
 <label>
-
 <input type="checkbox" checked>
-
 Chcę pozostać anonimowy/a
-
 </label>
-
 </p>
 
 <a class="cta"
 href="mailto:teksty.panda.express@gmail.com?subject=Anonimowa%20opinia%20-%20Panda%20Expert">
-
 🐼 Dodaj opinię
-
 </a>
 
 <p class="review-note">
@@ -1087,9 +921,7 @@ Facebook: PisaniePrac.PandaExpert
 
 <a class="cta"
 href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert&body=Dzień%20dobry%2C%0A%0ATemat%3A%20%0AZakres%20wsparcia%3A%20%0ATermin%3A%20%0A%0APozdrawiam">
-
 Wyślij e-mail →
-
 </a>
 
 </div>
