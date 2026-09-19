@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Korekta i redakcja prac | Prace akademickie | Panda Expert</title>
+
+<meta name="description" content="Korekta i redakcja prac licencjackich, magisterskich, inżynierskich i innych tekstów akademickich. Język, styl, spójność, przypisy i bibliografia. Panda Expert.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="Panda Expert">
+<meta name="theme-color" content="#1f7a31">
+
+<link rel="canonical" href="https://pandaexpert.pl/korekta-redakcja-prac.html">
+<link rel="icon" href="panda-logo.jpg">
+
+<meta property="og:locale" content="pl_PL">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pandaexpert.pl/korekta-redakcja-prac.html">
+<meta property="og:site_name" content="Panda Expert">
+<meta property="og:title" content="Korekta i redakcja prac | Panda Expert">
+<meta property="og:description" content="Korekta językowa i redakcja prac akademickich: styl, spójność, przypisy, bibliografia i przygotowanie tekstu.">
+<meta property="og:image" content="https://pandaexpert.pl/panda-akcja.png">
+<meta property="og:image:alt" content="Panda Expert – korekta i redakcja prac">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Korekta i redakcja prac | Panda Expert">
+<meta name="twitter:description" content="Korekta i redakcja prac akademickich: język, styl, spójność, przypisy i bibliografia.">
+<meta name="twitter:image" content="https://pandaexpert.pl/panda-akcja.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Korekta i redakcja prac",
+  "url": "https://pandaexpert.pl/korekta-redakcja-prac.html",
+  "description": "Korekta i redakcja prac akademickich obejmująca język, styl, spójność tekstu, przypisy, bibliografię oraz przygotowanie dokumentu.",
+  "provider": {
+    "@type": "ProfessionalService",
+    "@id": "https://pandaexpert.pl/#business",
+    "name": "Panda Expert",
+    "url": "https://pandaexpert.pl/"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Polska"
+  }
+}
+</script>
+
+<style>
+
+:root{
+  --green:#1f7a31;
+  --yellow:#ffd51e;
+  --blue:#0877d9;
+  --ink:#101820;
+  --paper:#fffdf4;
+}
+
+*{box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+  margin:0;
+  font-family:Inter,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.6;
+}
+
+a{color:inherit;}
+
+.wrap{
+  max-width:1160px;
+  margin:auto;
+  padding:0 22px;
+}
+
+/* MENU */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(255,253,244,.97);
+  border-bottom:3px solid #111;
+}
+
+.nav{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:1000;
+  text-decoration:none;
+}
+
+.brand img{
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid var(--green);
+}
+
+.brand b{font-size:21px;}
+
+.brand small{
+  display:block;
+  font-weight:800;
+  color:var(--green);
+}
+
+nav{
+  display:flex;
+  gap:18px;
+  font-weight:800;
+}
+
+nav a{
+  text-decoration:none;
+  white-space:nowrap;
+}
+
+.cta{
+  display:inline-block;
+  background:var(--yellow);
+  color:#111;
+  border:3px solid #111;
+  box-shadow:5px 5px 0 #111;
+  padding:13px 20px;
+  font-weight:1000;
+  border-radius:10px;
+  text-decoration:none;
+  transition:.15s ease;
+}
+
+.cta:hover{
+  transform:translate(2px,2px);
+  box-shadow:3px 3px 0 #111;
+}
+
+/* HERO */
+
+.hero{
+  padding:78px 0;
+  background:#e8f6e9;
+  border-bottom:4px solid #111;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.35fr .65fr;
+  gap:40px;
+  align-items:center;
+}
+
+.eyebrow{
+  display:inline-block;
+  background:white;
+  border:2px solid #111;
+  border-radius:999px;
+  padding:7px 13px;
+  font-weight:900;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  font-size:clamp(42px,6vw,70px);
+  line-height:1.03;
+  letter-spacing:-2px;
+  text-transform:uppercase;
+  margin:0 0 24px;
+}
+
+.hero p{
+  font-size:20px;
+  margin:0 0 28px;
+}
+
+.hero-box{
+  background:white;
+  border:3px solid #111;
+  border-radius:20px;
+  box-shadow:7px 7px 0 #111;
+  padding:30px;
+}
+
+.hero-box .panda{
+  font-size:72px;
+  line-height:1;
+}
+
+.hero-box h2{
+  margin:15px 0 10px;
+  font-size:27px;
+}
+
+.hero-box p{
+  font-size:17px;
+  margin:0;
+}
+
+/* SEKCJE */
+
+.section{padding:78px 0;}
+
+.section h2{
+  font-size:clamp(34px,5vw,52px);
+  margin:0 0 20px;
+  text-transform:uppercase;
+  letter-spacing:-1.5px;
+  line-height:1.12;
+}
+
+.sub{
+  font-size:19px;
+  margin:0 0 36px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+}
+
+.card{
+  min-width:0;
+  background:white;
+  border:3px solid #111;
+  border-radius:18px;
+  padding:26px;
+  box-shadow:6px 6px 0 #111;
+}
+
+.yellow{background:#fff7bf;}
+.green{background:#e8f6e9;}
+.blue{background:#e7f3ff;}
+
+.icon{font-size:35px;}
+
+.card h3{
+  font-size:22px;
+  margin:8px 0 12px;
+  line-height:1.25;
+}
+
+.card p{margin:0;}
+
+/* TREŚĆ */
+
+.content-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:26px;
+}
+
+.content-box{
+  background:white;
+  border:3px solid #111;
+  border-radius:18px;
+  padding:30px;
+  box-shadow:6px 6px 0 #111;
+}
+
+.content-box h3{
+  margin:0 0 14px;
+  font-size:25px;
+}
+
+.content-box p{
+  margin:0 0 15px;
+}
+
+.content-box p:last-child{
+  margin-bottom:0;
+}
+
+/* PROCES */
+
+.process{
+  background:var(--ink);
+  color:white;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:18px;
+}
+
+.step{
+  border:2px solid white;
+  border-radius:16px;
+  padding:22px;
+}
+
+.num{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  background:var(--yellow);
+  color:#111;
+  border-radius:50%;
+  font-weight:1000;
+  margin-bottom:12px;
+}
+
+.step p{margin-bottom:0;}
+
+/* FAQ */
+
+.faq-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.faq{
+  background:white;
+  border:3px solid #111;
+  border-radius:18px;
+  padding:25px;
+  box-shadow:5px 5px 0 #111;
+}
+
+.faq h3{
+  margin:0 0 10px;
+  font-size:21px;
+}
+
+.faq p{margin:0;}
+
+/* KONTAKT */
+
+.contact{
+  background:var(--green);
+  color:white;
+  border-top:4px solid #111;
+}
+
+.contactbox{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:28px;
+  align-items:center;
+}
+
+.contact-actions{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:16px;
+}
+
+.contact-actions .cta{
+  width:100%;
+  max-width:340px;
+  text-align:center;
+}
+
+.email{
+  font-size:clamp(20px,3vw,31px);
+  font-weight:1000;
+  overflow-wrap:anywhere;
+}
+
+.contact-link{
+  font-weight:800;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+
+.disclaimer{
+  margin-top:30px;
+  font-size:14px;
+  opacity:.92;
+}
+
+/* FOOTER */
+
+footer{
+  background:#0b0f12;
+  color:#ddd;
+  padding:28px 0;
+}
+
+.footer{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+/* TABLETY */
+
+@media(max-width:850px){
+
+  nav{display:none;}
+
+  .hero-grid,
+  .content-grid,
+  .contactbox{
+    grid-template-columns:1fr;
+  }
+
+  .cards{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .steps{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+/* TELEFONY */
+
+@media(max-width:620px){
+
+  .wrap{
+    padding-left:18px;
+    padding-right:18px;
+  }
+
+  .section,
+  .hero{
+    padding:50px 0;
+  }
+
+  .hero h1{
+    font-size:39px;
+    letter-spacing:-1px;
+  }
+
+  .hero p,
+  .sub{
+    font-size:18px;
+  }
+
+  .section h2{
+    font-size:34px;
+    letter-spacing:-1px;
+  }
+
+  .cards,
+  .steps,
+  .faq-grid{
+    grid-template-columns:minmax(0,1fr);
+  }
+
+  .nav{
+    min-height:68px;
+    gap:8px;
+  }
+
+  .brand{
+    gap:8px;
+  }
+
+  .brand img{
+    width:46px;
+    height:46px;
+  }
+
+  .brand b{font-size:16px;}
+  .brand small{font-size:12px;}
+
+  header .cta{
+    padding:10px 12px;
+    font-size:13px;
+    white-space:nowrap;
+  }
+
+  .contact-actions{
+    width:100%;
+  }
+
+  .contact-actions .cta{
+    max-width:none;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="wrap nav">
+
+<a class="brand" href="/">
+<img src="panda-logo.jpg" alt="Panda Expert">
+<div>
+<b>PANDA EXPERT</b>
+<small>Wsparcie Akademickie</small>
+</div>
+</a>
+
+<nav>
+<a href="#zakres">Zakres pomocy</a>
+<a href="#redakcja">Redakcja</a>
+<a href="#jak">Jak działamy</a>
+<a href="#faq">FAQ</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+
+<a class="cta" href="#kontakt">Napisz do nas</a>
+
+</div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero">
+<div class="wrap hero-grid">
+
+<div>
+
+<div class="eyebrow">✍️ Korekta i redakcja prac</div>
+
+<h1>Korekta i redakcja prac</h1>
+
+<p>
+Panda Expert oferuje <strong>korektę i redakcję prac licencjackich, magisterskich, inżynierskich oraz innych tekstów akademickich</strong>. Pomagamy poprawić język, styl, czytelność i spójność tekstu oraz uporządkować przypisy i bibliografię.
+</p>
+
+<a class="cta" href="#kontakt">Zapytaj o korektę →</a>
+
+</div>
+
+<div class="hero-box">
+<div class="panda">🐼✍️</div>
+
+<h2>Masz już tekst do poprawy?</h2>
+
+<p>
+Napisz, jaki dokument chcesz poprawić, jaka jest jego objętość i termin. Na tej podstawie ustalimy odpowiedni zakres korekty lub redakcji.
+</p>
+
+</div>
+
+</div>
+</section>
+
+<!-- ZAKRES -->
+
+<section class="section" id="zakres">
+<div class="wrap">
+
+<h2>Co możemy poprawić?</h2>
+
+<p class="sub">
+Zakres wsparcia dopasowujemy do stanu dokumentu. Może obejmować zarówno <strong>korektę językową</strong>, jak i bardziej rozbudowaną <strong>redakcję tekstu, poprawę jego spójności oraz uporządkowanie elementów pracy</strong>.
+</p>
+
+<div class="cards">
+
+<article class="card yellow">
+<div class="icon">🔤</div>
+<h3>Korekta językowa</h3>
+<p>
+Poprawa błędów językowych, gramatycznych, ortograficznych, interpunkcyjnych oraz literówek.
+</p>
+</article>
+
+<article class="card green">
+<div class="icon">✍️</div>
+<h3>Redakcja tekstu</h3>
+<p>
+Poprawa stylu, składni i sposobu formułowania zdań z zachowaniem sensu oraz charakteru tekstu.
+</p>
+</article>
+
+<article class="card blue">
+<div class="icon">🧩</div>
+<h3>Spójność pracy</h3>
+<p>
+Sprawdzenie logicznych powiązań między fragmentami tekstu, rozdziałami i poszczególnymi częściami dokumentu.
+</p>
+</article>
+
+<article class="card green">
+<div class="icon">📚</div>
+<h3>Bibliografia</h3>
+<p>
+Pomoc w uporządkowaniu bibliografii oraz ujednoliceniu sposobu zapisu wykorzystanych źródeł.
+</p>
+</article>
+
+<article class="card blue">
+<div class="icon">🔖</div>
+<h3>Przypisy i cytowania</h3>
+<p>
+Sprawdzenie spójności sposobu zapisu przypisów i cytowań zgodnie z przyjętymi zasadami lub wytycznymi.
+</p>
+</article>
+
+<article class="card yellow">
+<div class="icon">🎓</div>
+<h3>Uwagi promotora</h3>
+<p>
+Pomoc w uporządkowaniu i wdrożeniu poprawek wynikających z komentarzy lub uwag przekazanych do tekstu.
+</p>
+</article>
+
+</div>
+
+</div>
+</section>
+
+<!-- REDAKCJA -->
+
+<section class="section" id="redakcja">
+<div class="wrap">
+
+<h2>Korekta a redakcja – czym się różnią?</h2>
+
+<p class="sub">
+Zakres pracy nad tekstem zależy od tego, czy dokument wymaga przede wszystkim usunięcia błędów, czy również głębszego uporządkowania sposobu przedstawienia treści.
+</p>
+
+<div class="content-grid">
+
+<div class="content-box">
+
+<h3>🔤 Korekta tekstu</h3>
+
+<p>
+Korekta skupia się przede wszystkim na <strong>poprawności językowej dokumentu</strong>.
+</p>
+
+<p>
+Obejmuje między innymi literówki, ortografię, interpunkcję, gramatykę oraz inne błędy, które mogą obniżać czytelność tekstu.
+</p>
+
+</div>
+
+<div class="content-box">
+
+<h3>✍️ Redakcja tekstu</h3>
+
+<p>
+Redakcja może obejmować szerszą pracę nad <strong>stylem, składnią, klarownością i spójnością tekstu</strong>.
+</p>
+
+<p>
+Jej celem jest poprawienie sposobu przedstawienia treści bez zmieniania znaczenia, wyników badań ani merytorycznych wniosków autora.
+</p>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- RODZAJE -->
+
+<section class="section">
+<div class="wrap">
+
+<h2>Jakie teksty poprawiamy?</h2>
+
+<p class="sub">
+Wsparcie redakcyjne może dotyczyć różnych rodzajów tekstów przygotowywanych podczas studiów i pracy akademickiej.
+</p>
+
+<div class="cards">
+
+<article class="card green">
+<div class="icon">🎓</div>
+<h3>Prace licencjackie</h3>
+<p>
+Korekta i redakcja części teoretycznych, metodologicznych, badawczych oraz pozostałych elementów pracy licencjackiej.
+</p>
+</article>
+
+<article class="card yellow">
+<div class="icon">📖</div>
+<h3>Prace magisterskie</h3>
+<p>
+Sprawdzenie języka, stylu i spójności rozbudowanych tekstów oraz uporządkowanie ich przed przekazaniem promotorowi.
+</p>
+</article>
+
+<article class="card blue">
+<div class="icon">⚙️</div>
+<h3>Prace inżynierskie</h3>
+<p>
+Redakcja części opisowych, metodologicznych i analitycznych dokumentów o charakterze technicznym.
+</p>
+</article>
+
+<article class="card yellow">
+<div class="icon">📝</div>
+<h3>Artykuły i opracowania</h3>
+<p>
+Korekta językowa oraz redakcja artykułów, opracowań, raportów i innych tekstów akademickich.
+</p>
+</article>
+
+<article class="card blue">
+<div class="icon">📊</div>
+<h3>Opisy badań i wyników</h3>
+<p>
+Sprawdzenie czytelności i spójności opisów metodologii, analiz, tabel, wykresów oraz wyników badań.
+</p>
+</article>
+
+<article class="card green">
+<div class="icon">📄</div>
+<h3>Inne dokumenty</h3>
+<p>
+Możemy również sprawdzić inne teksty związane ze studiami, projektami i działalnością akademicką.
+</p>
+</article>
+
+</div>
+
+</div>
+</section>
+
+<!-- ELEMENTY PRACY -->
+
+<section class="section">
+<div class="wrap">
+
+<h2>Na co zwracamy uwagę?</h2>
+
+<p class="sub">
+Podczas pracy z dokumentem sprawdzamy nie tylko pojedyncze błędy, ale również elementy wpływające na <strong>czytelność i spójność całego tekstu</strong>.
+</p>
+
+<div class="content-grid">
+
+<div class="content-box">
+
+<h3>📝 Język i styl</h3>
+
+<p>
+Sprawdzamy poprawność zdań, powtórzenia, interpunkcję, składnię oraz fragmenty wymagające większej klarowności.
+</p>
+
+<p>
+W przypadku redakcji zwracamy również uwagę na zachowanie odpowiedniego, formalnego charakteru tekstu.
+</p>
+
+</div>
+
+<div class="content-box">
+
+<h3>📚 Przypisy i bibliografia</h3>
+
+<p>
+Pomagamy uporządkować zapis źródeł, przypisów i bibliografii oraz ujednolicić sposób ich prezentacji w całym dokumencie.
+</p>
+
+<p>
+Jeżeli uczelnia posiada własne wytyczne, warto przesłać je razem z dokumentem.
+</p>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- PROCES -->
+
+<section class="section process" id="jak">
+<div class="wrap">
+
+<h2>Jak wygląda współpraca?</h2>
+
+<p class="sub">
+Zakres korekty lub redakcji ustalamy na podstawie rodzaju dokumentu, jego objętości, stanu tekstu oraz terminu.
+</p>
+
+<div class="steps">
+
+<div class="step">
+<div class="num">1</div>
+<strong>Przesyłasz dokument</strong>
+<p>Podajesz rodzaj tekstu, jego objętość, termin oraz zakres potrzebnych poprawek.</p>
+</div>
+
+<div class="step">
+<div class="num">2</div>
+<strong>Sprawdzamy materiał</strong>
+<p>Oceniamy, czy potrzebna jest korekta językowa, redakcja czy szersze uporządkowanie dokumentu.</p>
+</div>
+
+<div class="step">
+<div class="num">3</div>
+<strong>Ustalamy zakres</strong>
+<p>Określamy, które elementy dokumentu wymagają pracy i jakie wytyczne należy uwzględnić.</p>
+</div>
+
+<div class="step">
+<div class="num">4</div>
+<strong>Pracujemy nad tekstem</strong>
+<p>Wprowadzamy uzgodnione poprawki, zachowując znaczenie i merytoryczną treść autora.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- FAQ -->
+
+<section class="section" id="faq">
+<div class="wrap">
+
+<h2>Najczęstsze pytania</h2>
+
+<div class="faq-grid">
+
+<div class="faq">
+<h3>Czy poprawiacie prace licencjackie i magisterskie?</h3>
+<p>
+Tak. Korekta i redakcja może dotyczyć prac licencjackich, magisterskich, inżynierskich oraz innych tekstów akademickich.
+</p>
+</div>
+
+<div class="faq">
+<h3>Czy korekta obejmuje interpunkcję i ortografię?</h3>
+<p>
+Tak. Korekta językowa może obejmować między innymi ortografię, interpunkcję, gramatykę, literówki oraz inne błędy językowe.
+</p>
+</div>
+
+<div class="faq">
+<h3>Czy możecie poprawić styl tekstu?</h3>
+<p>
+Tak. W ramach redakcji możemy pomóc poprawić składnię, styl, klarowność oraz spójność tekstu.
+</p>
+</div>
+
+<div class="faq">
+<h3>Czy sprawdzacie bibliografię i przypisy?</h3>
+<p>
+Tak. Możemy pomóc ujednolicić zapis bibliografii, przypisów i cytowań zgodnie z przekazanymi zasadami lub wytycznymi.
+</p>
+</div>
+
+<div class="faq">
+<h3>Czy uwzględniacie wytyczne uczelni?</h3>
+<p>
+Tak. Jeżeli posiadasz instrukcję przygotowania pracy lub inne wytyczne uczelni, możesz przesłać je razem z dokumentem.
+</p>
+</div>
+
+<div class="faq">
+<h3>Co wysłać do wyceny?</h3>
+<p>
+Najlepiej przesłać dokument lub informację o jego objętości, rodzaj potrzebnych poprawek, ewentualne wytyczne oraz termin.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- KONTAKT -->
+
+<section class="section contact" id="kontakt">
+<div class="wrap contactbox">
+
+<div>
+
+<h2>Potrzebujesz korekty lub redakcji?</h2>
+
+<p class="sub">
+Napisz, jaki dokument chcesz poprawić, jaka jest jego objętość, czego ma dotyczyć korekta oraz jaki masz termin.
+</p>
+
+<div class="email">
+<a class="contact-link"
+href="mailto:teksty.panda.express@gmail.com?subject=Korekta%20i%20redakcja%20-%20Panda%20Expert">
+teksty.panda.express@gmail.com
+</a>
+</div>
+
+<p class="disclaimer">
+Panda Expert świadczy usługi konsultacyjne, edukacyjne i redakcyjne. Korekta i redakcja służą poprawie własnego tekstu klienta i nie obejmują podszywania się pod autora ani przedstawiania cudzej pracy jako własnej.
+</p>
+
+</div>
+
+<div class="contact-actions">
+
+<a class="cta"
+href="mailto:teksty.panda.express@gmail.com?subject=Korekta%20i%20redakcja%20-%20Panda%20Expert&body=Dzień%20dobry%2C%0A%0ARodzaj%20tekstu%3A%20%0AObjętość%3A%20%0AZakres%20poprawek%3A%20%0ATermin%3A%20%0A%0APozdrawiam">
+Wyślij e-mail →
+</a>
+
+<a class="cta"
+href="https://m.me/PisaniePrac.PandaExpert"
+target="_blank"
+rel="noopener noreferrer">
+Napisz na Messengerze →
+</a>
+
+<a class="cta"
+href="https://www.facebook.com/PisaniePrac.PandaExpert"
+target="_blank"
+rel="noopener noreferrer">
+Odwiedź Facebooka →
+</a>
+
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap footer">
+<b>© 2026 Panda Expert – Wsparcie Akademickie</b>
+<span>Kontakt: teksty.panda.express@gmail.com</span>
+</div>
+</footer>
+
+</body>
+</html>
