@@ -654,10 +654,17 @@ footer{
     overflow-wrap:normal;
   }
 
-  .cards,
-  .kierunki-grid{
-    grid-template-columns:1fr;
-  }
+.cards,
+.kierunki-grid{
+  grid-template-columns:minmax(0,1fr);
+  width:100%;
+}
+
+.kierunek-card{
+  grid-column:auto !important;
+  width:100%;
+  min-width:0;
+}
 
   .steps{
     grid-template-columns:1fr;
