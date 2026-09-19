@@ -439,14 +439,12 @@ nav a{
   font-weight:800;
 }
 
-/* LINK DO PODSTRONY SEO */
+/* LINKI WEWNĘTRZNE SEO – WIZUALNIE BEZ ZMIAN */
 
-.seo-link{
-  display:inline-block;
-  margin-top:8px;
-  font-weight:900;
-  text-decoration:underline;
-  text-underline-offset:3px;
+.internal-link{
+  color:inherit;
+  text-decoration:none;
+  font:inherit;
 }
 
 /* KONTAKT */
@@ -654,17 +652,17 @@ footer{
     overflow-wrap:normal;
   }
 
-.cards,
-.kierunki-grid{
-  grid-template-columns:minmax(0,1fr);
-  width:100%;
-}
+  .cards,
+  .kierunki-grid{
+    grid-template-columns:minmax(0,1fr);
+    width:100%;
+  }
 
-.kierunek-card{
-  grid-column:auto !important;
-  width:100%;
-  min-width:0;
-}
+  .kierunek-card{
+    grid-column:auto !important;
+    width:100%;
+    min-width:0;
+  }
 
   .steps{
     grid-template-columns:1fr;
@@ -884,7 +882,7 @@ aria-label="Kontakt e-mail">
 <h1>W czym możemy pomóc?</h1>
 
 <p class="sub">
-Panda Expert oferuje <strong>pomoc przy pisaniu prac licencjackich, magisterskich i inżynierskich</strong> w formie <strong>konsultacji, redakcji, korekty, formatowania</strong> oraz <strong>wsparcia w analizie danych i organizacji pracy akademickiej</strong>. Zakres pomocy ustalamy indywidualnie w zależności od rodzaju projektu i potrzeb klienta.
+Panda Expert oferuje <strong><a class="internal-link" href="pomoc-przy-pisaniu-prac.html">pomoc przy pisaniu prac</a> <a class="internal-link" href="pomoc-przy-pracy-licencjackiej.html">licencjackich</a>, <a class="internal-link" href="pomoc-przy-pracy-magisterskiej.html">magisterskich</a> i <a class="internal-link" href="pomoc-przy-pracy-inzynierskiej.html">inżynierskich</a></strong> w formie <strong>konsultacji, redakcji, korekty, formatowania</strong> oraz <strong>wsparcia w analizie danych i organizacji pracy akademickiej</strong>. Zakres pomocy ustalamy indywidualnie w zależności od rodzaju projektu i potrzeb klienta.
 </p>
 
 <div class="cards">
@@ -908,7 +906,7 @@ Pomoc w pisaniu prac, tworzenie struktury, metodologia, dobór literatury, inter
 <h3>Analizy i badania</h3>
 
 <p>
-Analizy statystyczne, biznesowe i techniczne, opracowanie ankiet i kwestionariuszy, przygotowanie tabel i wykresów oraz pomoc w interpretacji wyników.
+<a class="internal-link" href="analiza-danych-statystyka.html">Analizy statystyczne</a>, biznesowe i techniczne, opracowanie ankiet i kwestionariuszy, przygotowanie tabel i wykresów oraz pomoc w interpretacji wyników.
 </p>
 
 </article>
@@ -920,7 +918,7 @@ Analizy statystyczne, biznesowe i techniczne, opracowanie ankiet i kwestionarius
 <h3>Redakcja, korekta i formatowanie</h3>
 
 <p>
-Redakcja i korekta dokumentów akademickich, formatowanie tekstu, uporządkowanie materiałów, przypisów, tabel, wykresów oraz pozostałych elementów dokumentu.
+<a class="internal-link" href="korekta-redakcja-prac.html">Redakcja i korekta dokumentów akademickich</a>, <a class="internal-link" href="formatowanie-prac.html">formatowanie tekstu</a>, uporządkowanie materiałów, przypisów, tabel, wykresów oraz pozostałych elementów dokumentu.
 </p>
 
 </article>
