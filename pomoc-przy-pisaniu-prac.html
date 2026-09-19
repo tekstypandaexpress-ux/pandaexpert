@@ -7,8 +7,7 @@
 
 <title>Pomoc przy pisaniu prac licencjackich i magisterskich | Panda Expert</title>
 
-<meta name="description" content="Pomoc przy pisaniu prac licencjackich, magisterskich i inżynierskich: konsultacje, metodologia, analiza danych, redakcja, korekta i formatowanie. Panda Expert.">
-
+<meta name="description" content="Pomoc przy pisaniu prac licencjackich, magisterskich i inżynierskich: konsultacje, analiza danych, korekta, redakcja i formatowanie. Panda Expert.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="author" content="Panda Expert">
 <meta name="theme-color" content="#1f7a31">
@@ -20,35 +19,43 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pandaexpert.pl/pomoc-przy-pisaniu-prac.html">
 <meta property="og:site_name" content="Panda Expert">
-<meta property="og:title" content="Pomoc przy pisaniu prac licencjackich i magisterskich | Panda Expert">
-<meta property="og:description" content="Konsultacje przy pracach licencjackich, magisterskich i inżynierskich, metodologia, analiza danych, redakcja, korekta i formatowanie.">
+<meta property="og:title" content="Pomoc przy pisaniu prac | Panda Expert">
+<meta property="og:description" content="Konsultacje przy pracach licencjackich, magisterskich i inżynierskich, analiza danych, korekta, redakcja i formatowanie.">
 <meta property="og:image" content="https://pandaexpert.pl/panda-akcja.png">
 <meta property="og:image:alt" content="Panda Expert – pomoc przy pisaniu prac">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Pomoc przy pisaniu prac | Panda Expert">
-<meta name="twitter:description" content="Konsultacje i wsparcie przy pracach licencjackich, magisterskich i inżynierskich.">
+<meta name="twitter:description" content="Konsultacje przy pracach, analiza danych, korekta, redakcja i formatowanie – Panda Expert.">
 <meta name="twitter:image" content="https://pandaexpert.pl/panda-akcja.png">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "@id": "https://pandaexpert.pl/pomoc-przy-pisaniu-prac.html#service",
-  "name": "Pomoc przy pisaniu prac – Panda Expert",
+  "@type": "ProfessionalService",
+  "@id": "https://pandaexpert.pl/#business",
+  "name": "Panda Expert",
   "url": "https://pandaexpert.pl/pomoc-przy-pisaniu-prac.html",
-  "description": "Wsparcie edukacyjne i konsultacyjne przy pracach licencjackich, magisterskich i inżynierskich, obejmujące planowanie, metodologię, analizę danych, redakcję, korektę i formatowanie.",
-  "provider": {
-    "@type": "ProfessionalService",
-    "@id": "https://pandaexpert.pl/#business",
-    "name": "Panda Expert",
-    "url": "https://pandaexpert.pl/",
-    "email": "mailto:teksty.panda.express@gmail.com"
-  },
+  "image": "https://pandaexpert.pl/panda-akcja.png",
+  "logo": "https://pandaexpert.pl/panda-logo.jpg",
+  "description": "Pomoc przy pisaniu prac w formie konsultacji akademickich, analizy danych, redakcji, korekty i formatowania.",
+  "email": "mailto:teksty.panda.express@gmail.com",
+  "sameAs": [
+    "https://www.facebook.com/PisaniePrac.PandaExpert"
+  ],
   "areaServed": {
     "@type": "Country",
     "name": "Polska"
-  }
+  },
+  "knowsLanguage": "pl",
+  "serviceType": [
+    "Konsultacje akademickie",
+    "Redakcja prac",
+    "Korekta prac",
+    "Formatowanie prac",
+    "Analiza danych",
+    "Analizy statystyczne"
+  ]
 }
 </script>
 
@@ -163,77 +170,64 @@ nav a{
   background:white;
 }
 
-/* HERO */
+/* BANER */
 
-.hero{
-  padding:68px 0;
-  background:
-    radial-gradient(#f0c900 1.2px,transparent 1.2px),
-    linear-gradient(135deg,#ffe532,#ffc919);
-  background-size:12px 12px,auto;
+.panda-banner{
+  position:relative;
+  width:100%;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background:#ffd51e;
   border-bottom:4px solid #111;
 }
 
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.05fr .95fr;
-  gap:42px;
-  align-items:center;
+.panda-banner picture{
+  display:block;
+  width:100%;
 }
 
-.breadcrumb{
-  font-weight:800;
-  margin-bottom:18px;
-  font-size:15px;
-}
-
-.breadcrumb a{
-  text-decoration:underline;
-  text-underline-offset:3px;
-}
-
-.hero h1{
-  font-size:clamp(40px,5.5vw,66px);
-  line-height:1;
-  margin:12px 0 22px;
-  text-transform:uppercase;
-  letter-spacing:-2.5px;
-  text-shadow:3px 3px 0 white;
-}
-
-.hero h1 span{
-  color:var(--red);
-}
-
-.hero-text{
-  font-size:19px;
-  line-height:1.55;
-  background:rgba(255,255,255,.82);
-  border:3px solid #111;
-  border-radius:18px;
-  padding:22px;
-  box-shadow:6px 6px 0 #111;
-}
-
-.actions{
-  display:flex;
-  gap:16px;
-  flex-wrap:wrap;
-  margin-top:28px;
-}
-
-.hero-art{
-  background:white;
-  border:4px solid #111;
-  border-radius:24px;
-  overflow:hidden;
-  box-shadow:10px 10px 0 #111;
-}
-
-.hero-art img{
+.panda-banner img{
   display:block;
   width:100%;
   height:auto;
+  margin:0;
+  padding:0;
+}
+
+.banner-hotspot{
+  position:absolute;
+  display:block;
+  z-index:5;
+  cursor:pointer;
+}
+
+.banner-email{
+  left:6.8%;
+  top:63.5%;
+  width:12.7%;
+  height:10%;
+}
+
+.banner-messenger{
+  left:20.1%;
+  top:63.5%;
+  width:12.7%;
+  height:10%;
+}
+
+.banner-facebook{
+  left:33.4%;
+  top:63.5%;
+  width:12.7%;
+  height:10%;
+}
+
+.banner-contact{
+  left:6.8%;
+  top:77%;
+  width:33.2%;
+  height:10%;
 }
 
 /* SEKCJE */
@@ -242,6 +236,7 @@ nav a{
   padding:78px 0;
 }
 
+.section h1,
 .section h2{
   font-size:clamp(34px,5vw,54px);
   margin:0 0 20px;
@@ -256,6 +251,16 @@ nav a{
   max-width:none;
   margin:0 0 36px;
   text-align:left;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:normal;
+}
+
+.section p{
+  text-align:left;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:normal;
 }
 
 /* KAFELKI */
@@ -274,18 +279,23 @@ nav a{
   box-shadow:6px 6px 0 #111;
 }
 
+.icon{
+  font-size:34px;
+}
+
 .card h3{
   font-size:22px;
   margin:8px 0;
   line-height:1.25;
+  hyphens:none;
+  word-break:normal;
 }
 
 .card p{
   text-align:left;
-}
-
-.icon{
-  font-size:34px;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:normal;
 }
 
 .green{
@@ -300,55 +310,79 @@ nav a{
   background:#fff7bf;
 }
 
-/* RODZAJE PRAC */
+/* KIERUNKI */
 
-.content-section{
-  background:#fff;
-  border-top:4px solid #111;
-  border-bottom:4px solid #111;
-}
-
-.content-grid{
+.kierunki-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:24px;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+  width:100%;
 }
 
-.content-box{
+.kierunek-card{
+  min-width:0;
+  width:100%;
+  background:white;
   border:3px solid #111;
   border-radius:18px;
-  padding:28px;
-  background:var(--paper);
+  padding:24px;
   box-shadow:6px 6px 0 #111;
 }
 
-.content-box:first-child{
+.kierunek-card:nth-child(1){
   background:#fff7bf;
 }
 
-.content-box:last-child{
+.kierunek-card:nth-child(2){
   background:#e8f6e9;
 }
 
-.content-box h3{
-  margin-top:0;
-  font-size:25px;
+.kierunek-card:nth-child(3){
+  background:#e7f3ff;
 }
 
-.content-box ul{
-  padding-left:22px;
+.kierunek-card:nth-child(4){
+  background:#fff7bf;
 }
 
-.content-box li{
-  margin-bottom:10px;
+.kierunek-card:nth-child(5){
+  background:#e8f6e9;
 }
 
-/* ETAPY */
+.kierunek-card:nth-child(6){
+  background:#e7f3ff;
+}
 
-.stage-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+.kierunek-card:nth-child(7){
+  background:#e8f6e9;
+}
+
+@media(min-width:851px){
+  .kierunek-card:nth-child(7){
+    grid-column:2;
+  }
+}
+
+.kierunek-card .icon{
+  font-size:34px;
+}
+
+.kierunek-card h3{
+  font-size:21px;
+  margin:8px 0 12px;
+  line-height:1.25;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:break-word;
+}
+
+.kierunek-card p{
+  margin:0;
+  font-size:16px;
+  line-height:1.6;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:break-word;
 }
 
 /* JAK DZIAŁAMY */
@@ -372,6 +406,9 @@ nav a{
 
 .step p{
   text-align:left;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:normal;
 }
 
 .num{
@@ -386,49 +423,30 @@ nav a{
   margin-bottom:12px;
 }
 
-/* FAQ */
+/* NARZĘDZIA */
 
-.faq-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
+.tools{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
 }
 
-.faq{
+.pill{
+  border:2px solid #111;
   background:white;
-  border:3px solid #111;
-  border-radius:18px;
-  padding:24px;
-  box-shadow:5px 5px 0 #111;
+  padding:9px 13px;
+  border-radius:999px;
+  font-weight:800;
 }
 
-.faq:nth-child(3n+1){
-  background:#fff7bf;
-}
+/* LINK DO PODSTRONY SEO */
 
-.faq:nth-child(3n+2){
-  background:#e8f6e9;
-}
-
-.faq:nth-child(3n+3){
-  background:#e7f3ff;
-}
-
-.faq h3{
-  margin-top:0;
-  font-size:21px;
-}
-
-/* INFORMACJA */
-
-.disclaimer{
-  margin-top:34px;
-  padding:20px 22px;
-  border:3px solid #111;
-  background:#fffbe1;
-  color:#111;
-  border-radius:14px;
-  box-shadow:5px 5px 0 #111;
+.seo-link{
+  display:inline-block;
+  margin-top:8px;
+  font-weight:900;
+  text-decoration:underline;
+  text-underline-offset:3px;
 }
 
 /* KONTAKT */
@@ -464,21 +482,82 @@ nav a{
   text-align:center;
 }
 
-.email{
-  font-size:clamp(20px,3vw,31px);
-  font-weight:1000;
-  overflow-wrap:anywhere;
-}
-
 .contact-link{
   text-decoration:underline;
   text-underline-offset:3px;
   font-weight:800;
 }
 
+.contact-link:hover{
+  text-decoration-thickness:2px;
+}
+
+.email{
+  font-size:clamp(20px,3vw,31px);
+  font-weight:1000;
+  overflow-wrap:anywhere;
+}
+
 .note{
   font-size:14px;
   opacity:.9;
+}
+
+/* OPINIE */
+
+.reviews{
+  background:#e8f6e9;
+  border-top:4px solid #111;
+  border-bottom:4px solid #111;
+}
+
+.review-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  align-items:start;
+}
+
+.review-form{
+  background:white;
+  border:3px solid #111;
+  border-radius:18px;
+  padding:30px;
+  box-shadow:6px 6px 0 #111;
+}
+
+.review-form h3{
+  font-size:25px;
+  margin:0 0 12px;
+}
+
+.review-form p{
+  margin:0 0 22px;
+}
+
+.review-stars{
+  font-size:34px;
+  letter-spacing:4px;
+  margin:4px 0 18px;
+}
+
+.review-button{
+  display:block;
+  width:100%;
+  background:var(--yellow);
+  border:3px solid #111;
+  box-shadow:5px 5px 0 #111;
+  padding:16px 18px;
+  font-size:18px;
+  font-weight:1000;
+  text-align:center;
+  border-radius:10px;
+  transition:.15s ease;
+}
+
+.review-button:hover{
+  transform:translate(2px,2px);
+  box-shadow:3px 3px 0 #111;
 }
 
 /* FOOTER */
@@ -496,7 +575,7 @@ footer{
   flex-wrap:wrap;
 }
 
-/* TABLET */
+/* TABLETY */
 
 @media(max-width:850px){
 
@@ -504,23 +583,21 @@ footer{
     display:none;
   }
 
-  .hero-grid,
   .contactbox,
-  .content-grid{
+  .review-grid{
     grid-template-columns:1fr;
   }
 
-  .cards,
-  .stage-grid{
+  .cards{
     grid-template-columns:1fr;
+  }
+
+  .kierunki-grid{
+    grid-template-columns:repeat(2,1fr);
   }
 
   .steps{
     grid-template-columns:1fr 1fr;
-  }
-
-  .faq-grid{
-    grid-template-columns:1fr;
   }
 
   .brand b{
@@ -529,7 +606,7 @@ footer{
 
 }
 
-/* TELEFON */
+/* TELEFONY */
 
 @media(max-width:520px){
 
@@ -542,30 +619,51 @@ footer{
     padding:48px 0;
   }
 
-  .hero{
-    padding:42px 0 48px;
-  }
-
-  .hero h1{
-    font-size:39px;
-    line-height:1.05;
-    letter-spacing:-1.5px;
-  }
-
-  .hero-text{
-    font-size:17px;
-    padding:18px;
-  }
-
+  .section h1,
   .section h2{
-    font-size:34px;
+    font-size:36px;
     line-height:1.15;
     letter-spacing:-1px;
+    margin-bottom:22px;
+    hyphens:none;
+    word-break:normal;
   }
 
   .sub{
     font-size:18px;
     line-height:1.55;
+    width:100%;
+    max-width:none;
+    text-align:left;
+    hyphens:none;
+    word-break:normal;
+    overflow-wrap:normal;
+  }
+
+  .section p{
+    text-align:left;
+    hyphens:none;
+    word-break:normal;
+    overflow-wrap:normal;
+  }
+
+  .card p{
+    text-align:left;
+    hyphens:none;
+    word-break:normal;
+    overflow-wrap:normal;
+  }
+
+  .cards,
+  .kierunki-grid{
+    grid-template-columns:minmax(0,1fr);
+    width:100%;
+  }
+
+  .kierunek-card{
+    grid-column:auto !important;
+    width:100%;
+    min-width:0;
   }
 
   .steps{
@@ -600,6 +698,63 @@ footer{
     white-space:nowrap;
   }
 
+  .panda-banner{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    position:relative;
+  }
+
+  .panda-banner picture{
+    display:block;
+    width:100%;
+  }
+
+  .panda-banner img{
+    position:static;
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:100%;
+  }
+
+  .banner-email{
+    left:8%;
+    top:27%;
+    width:40%;
+    height:7%;
+  }
+
+  .banner-messenger{
+    left:8%;
+    top:34.5%;
+    width:40%;
+    height:7%;
+  }
+
+  .banner-facebook{
+    left:8%;
+    top:42%;
+    width:40%;
+    height:7%;
+  }
+
+  .banner-contact{
+    left:8%;
+    top:90%;
+    width:84%;
+    height:6%;
+  }
+
+  .review-form{
+    padding:22px;
+  }
+
+  .review-button{
+    font-size:16px;
+    padding:15px 12px;
+  }
+
   .contact-actions{
     width:100%;
   }
@@ -611,8 +766,31 @@ footer{
 
 }
 
-</style>
+/* BARDZO MAŁE TELEFONY */
 
+@media(max-width:380px){
+
+  .section h1,
+  .section h2{
+    font-size:32px;
+  }
+
+  .brand b{
+    font-size:15px;
+  }
+
+  .brand small{
+    font-size:11px;
+  }
+
+  header .cta{
+    padding:9px 10px;
+    font-size:12px;
+  }
+
+}
+
+</style>
 </head>
 
 <body>
@@ -621,7 +799,7 @@ footer{
 
 <div class="wrap nav">
 
-<a class="brand" href="https://pandaexpert.pl/">
+<a class="brand" href="#start">
 
 <img src="panda-logo.jpg" alt="Panda Expert">
 
@@ -633,11 +811,12 @@ footer{
 </a>
 
 <nav>
-<a href="https://pandaexpert.pl/">Strona główna</a>
-<a href="#zakres">Zakres pomocy</a>
-<a href="#rodzaje">Rodzaje prac</a>
+<a href="#oferta">Oferta</a>
+<a href="#kierunki">Kierunki</a>
+<a href="#narzedzia">Narzędzia</a>
 <a href="#jak">Jak działamy</a>
-<a href="#faq">FAQ</a>
+<a href="#opinie">Opinie</a>
+<a href="#kontakt">Kontakt</a>
 </nav>
 
 <a class="cta" href="#kontakt">
@@ -648,67 +827,64 @@ Napisz do nas
 
 </header>
 
-<main>
+<main id="start">
 
-<!-- HERO -->
+<!-- BANER -->
 
-<section class="hero">
+<section class="panda-banner" aria-label="Panda Expert">
 
-<div class="wrap hero-grid">
+<picture>
 
-<div>
-
-<div class="breadcrumb">
-<a href="https://pandaexpert.pl/">Panda Expert</a> → Pomoc przy pisaniu prac
-</div>
-
-<h1>
-Pomoc przy<br>
-<span>pisaniu prac</span>
-</h1>
-
-<div class="hero-text">
-Panda Expert oferuje <strong>pomoc przy pisaniu prac licencjackich, magisterskich i inżynierskich</strong> w formie konsultacji oraz wsparcia na różnych etapach pracy. Pomagamy w zakresie struktury, metodologii, analizy danych, redakcji, korekty i formatowania.
-</div>
-
-<div class="actions">
-
-<a class="cta"
-href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20pomoc%20przy%20pisaniu%20pracy">
-📧 NAPISZ E-MAIL
-</a>
-
-<a class="cta secondary"
-href="#zakres">
-ZOBACZ ZAKRES POMOCY
-</a>
-
-</div>
-
-</div>
-
-<div class="hero-art">
+<source
+media="(max-width:520px)"
+srcset="panda-mobile.png">
 
 <img
-src="panda-hero.jpg"
-alt="Pomoc przy pisaniu prac licencjackich i magisterskich – Panda Expert">
+src="panda-akcja.png"
+alt="Panda Expert – pomoc przy pisaniu prac i wsparcie akademickie">
 
-</div>
+</picture>
 
-</div>
+<a
+class="banner-hotspot banner-email"
+href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert"
+aria-label="Napisz e-mail">
+</a>
+
+<a
+class="banner-hotspot banner-messenger"
+href="https://m.me/PisaniePrac.PandaExpert"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Napisz do Panda Expert na Messengerze">
+</a>
+
+<a
+class="banner-hotspot banner-facebook"
+href="https://www.facebook.com/PisaniePrac.PandaExpert"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Odwiedź Panda Expert na Facebooku">
+</a>
+
+<a
+class="banner-hotspot banner-contact"
+href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert"
+aria-label="Kontakt e-mail">
+</a>
 
 </section>
 
-<!-- ZAKRES POMOCY -->
+<!-- W CZYM POMAGAMY -->
 
-<section class="section" id="zakres">
+<section class="section" id="oferta">
 
 <div class="wrap">
 
-<h2>W czym możemy pomóc?</h2>
+<h1>Pomoc przy pisaniu prac</h1>
 
 <p class="sub">
-Wsparcie może dotyczyć różnych etapów przygotowywania pracy dyplomowej. Zakres pomocy ustalamy indywidualnie w zależności od tematu, kierunku studiów, etapu pracy oraz wymagań uczelni.
+Panda Expert oferuje <strong>pomoc przy pisaniu prac licencjackich, magisterskich i inżynierskich</strong> w formie <strong>konsultacji, redakcji, korekty, formatowania</strong> oraz <strong>wsparcia w analizie danych i organizacji pracy akademickiej</strong>. Zakres pomocy ustalamy indywidualnie w zależności od rodzaju projektu i potrzeb klienta.
 </p>
 
 <div class="cards">
@@ -717,80 +893,37 @@ Wsparcie może dotyczyć różnych etapów przygotowywania pracy dyplomowej. Zak
 
 <div class="icon">📚</div>
 
-<h3>Plan i struktura pracy</h3>
+<h3>Konsultacje przy pracach</h3>
 
 <p>
-Pomagamy uporządkować temat, cel pracy, pytania badawcze oraz logiczny układ rozdziałów i podrozdziałów. Możemy również omówić uwagi promotora i zaplanować kolejne etapy pracy.
+Pomoc w pisaniu prac, tworzenie struktury, metodologia, dobór literatury, interpretacja wymagań oraz przygotowanie do prezentacji i obrony.
 </p>
 
 </article>
 
 <article class="card green">
-
-<div class="icon">🔬</div>
-
-<h3>Metodologia i badania</h3>
-
-<p>
-Wsparcie może obejmować dobór metod badawczych, przygotowanie ankiety lub kwestionariusza, omówienie sposobu zbierania danych oraz konsultacje dotyczące metodologii badania.
-</p>
-
-</article>
-
-<article class="card blue">
 
 <div class="icon">📊</div>
 
-<h3>Analiza danych</h3>
+<h3>Analizy i badania</h3>
 
 <p>
-Pomagamy w analizach statystycznych, biznesowych i technicznych, przygotowaniu tabel i wykresów oraz zrozumieniu i interpretacji uzyskanych wyników.
+Analizy statystyczne, biznesowe i techniczne, opracowanie ankiet i kwestionariuszy, przygotowanie tabel i wykresów oraz pomoc w interpretacji wyników.
 </p>
 
 </article>
 
-<article class="card yellow">
+<article class="card blue">
 
 <div class="icon">✍️</div>
 
-<h3>Redakcja i korekta</h3>
+<h3>Redakcja, korekta i formatowanie</h3>
 
 <p>
-Pomagamy poprawić język, czytelność, spójność i strukturę przygotowanego tekstu oraz wychwycić błędy językowe, stylistyczne i edytorskie.
+Redakcja i korekta dokumentów akademickich, formatowanie tekstu, uporządkowanie materiałów, przypisów, tabel, wykresów oraz pozostałych elementów dokumentu.
 </p>
 
 </article>
-
-<article class="card green">
-
-<div class="icon">📑</div>
-
-<h3>Formatowanie pracy</h3>
-
-<p>
-Wsparcie obejmuje uporządkowanie nagłówków, spisów, tabel, wykresów, przypisów i innych elementów dokumentu zgodnie z przekazanymi wymaganiami.
-</p>
-
-</article>
-
-<article class="card blue">
-
-<div class="icon">🎓</div>
-
-<h3>Przygotowanie do obrony</h3>
-
-<p>
-Pomagamy uporządkować najważniejsze informacje z pracy, przygotować prezentację oraz przećwiczyć sposób przedstawienia celu, metodologii i wyników.
-</p>
-
-</article>
-
-</div>
-
-<div class="disclaimer">
-
-<strong>Ważne:</strong>
-Panda Expert świadczy usługi konsultacyjne, edukacyjne, redakcyjne i analityczne. Wsparcie ma pomagać klientowi w samodzielnym przygotowaniu i rozwijaniu własnej pracy. Nie oferujemy podszywania się pod autora ani przedstawiania cudzej pracy jako własnej.
 
 </div>
 
@@ -798,125 +931,112 @@ Panda Expert świadczy usługi konsultacyjne, edukacyjne, redakcyjne i analitycz
 
 </section>
 
-<!-- RODZAJE PRAC -->
+<!-- KIERUNKI -->
 
-<section class="section content-section" id="rodzaje">
+<section class="section" id="kierunki">
 
 <div class="wrap">
 
-<h2>Pomoc przy pracach licencjackich, magisterskich i inżynierskich</h2>
+<h2>🎓 Kierunki, w których pomagamy</h2>
 
 <p class="sub">
-Każdy rodzaj pracy może wiązać się z innymi wymaganiami. Dlatego zakres konsultacji dopasowujemy do konkretnego projektu oraz etapu, na którym znajduje się student.
+Realizujemy zlecenia z <strong>większości kierunków studiów</strong>. Wspieramy studentów zarówno kierunków <strong>humanistycznych i społecznych</strong>, jak i <strong>ekonomicznych, medycznych, technicznych, informatycznych oraz przyrodniczych</strong>.
 </p>
 
-<div class="content-grid">
+<div class="kierunki-grid">
 
-<div class="content-box">
-
-<h3>🎓 Prace licencjackie i magisterskie</h3>
-
+<article class="kierunek-card">
+<div class="icon">📚</div>
+<h3>Kierunki humanistyczne</h3>
 <p>
-Wsparcie przy pracy licencjackiej lub magisterskiej może rozpocząć się już na etapie planowania tematu i struktury. Pomagamy zrozumieć wymagania, uporządkować poszczególne części pracy oraz zaplanować część teoretyczną i badawczą.
+Filologia polska, filologie obce, historia, filozofia, kulturoznawstwo, językoznawstwo, literaturoznawstwo, archeologia, historia sztuki i inne.
 </p>
+</article>
 
+<article class="kierunek-card">
+<div class="icon">👥</div>
+<h3>Kierunki społeczne</h3>
 <p>
-Potrzebujesz wsparcia dotyczącego konkretnie pracy magisterskiej?
-Zobacz naszą szczegółową stronę:
-<a href="https://pandaexpert.pl/pomoc-przy-pracy-magisterskiej.html">
-<strong>pomoc przy pracy magisterskiej</strong>
-</a>.
+Pedagogika, psychologia, socjologia, politologia, administracja, bezpieczeństwo wewnętrzne, bezpieczeństwo narodowe, stosunki międzynarodowe, praca socjalna, kryminologia i inne.
 </p>
+</article>
 
-<ul>
-<li>plan i struktura pracy,</li>
-<li>cele, pytania i problemy badawcze,</li>
-<li>metodologia badań,</li>
-<li>ankiety i kwestionariusze,</li>
-<li>analiza i interpretacja danych,</li>
-<li>redakcja i korekta tekstu,</li>
-<li>formatowanie dokumentu,</li>
-<li>przygotowanie prezentacji do obrony.</li>
-</ul>
+<article class="kierunek-card">
+<div class="icon">💼</div>
+<h3>Kierunki ekonomiczne i biznesowe</h3>
+<p>
+Ekonomia, finanse i rachunkowość, zarządzanie, marketing, logistyka, analityka gospodarcza, biznes międzynarodowy, przedsiębiorczość, zarządzanie zasobami ludzkimi i inne.
+</p>
+</article>
+
+<article class="kierunek-card">
+<div class="icon">🩺</div>
+<h3>Kierunki medyczne i związane ze zdrowiem</h3>
+<p>
+Pielęgniarstwo, położnictwo, fizjoterapia, ratownictwo medyczne, zdrowie publiczne, dietetyka, kosmetologia, farmacja, analityka medyczna i inne.
+</p>
+</article>
+
+<article class="kierunek-card">
+<div class="icon">⚙️</div>
+<h3>Kierunki techniczne i inżynierskie</h3>
+<p>
+Budownictwo, mechanika i budowa maszyn, automatyka i robotyka, mechatronika, elektrotechnika, elektronika, energetyka, inżynieria produkcji, transport, architektura, geodezja i kartografia i inne.
+</p>
+</article>
+
+<article class="kierunek-card">
+<div class="icon">💻</div>
+<h3>Kierunki informatyczne</h3>
+<p>
+Informatyka, informatyka stosowana, programowanie, cyberbezpieczeństwo, analiza danych, sztuczna inteligencja, teleinformatyka, technologie informacyjne, informatyka i ekonometria i inne.
+</p>
+</article>
+
+<article class="kierunek-card">
+<div class="icon">🌿</div>
+<h3>Kierunki przyrodnicze</h3>
+<p>
+Biologia, biotechnologia, chemia, ochrona środowiska, geografia, geologia, rolnictwo, leśnictwo, ogrodnictwo, zootechnika, gospodarka przestrzenna i inne.
+</p>
+</article>
 
 </div>
 
-<div class="content-box">
-
-<h3>⚙️ Prace inżynierskie</h3>
-
-<p>
-W przypadku prac inżynierskich pomoc może dodatkowo dotyczyć części technicznej, analitycznej lub projektowej oraz narzędzi wykorzystywanych podczas realizacji projektu.
+<p class="sub" style="margin-top:32px;margin-bottom:0;">
+<strong>Nie widzisz swojego kierunku na liście?</strong> Napisz do nas. Zakres wsparcia ustalamy indywidualnie w zależności od tematu, rodzaju projektu i potrzeb klienta.
 </p>
-
-<ul>
-<li>planowanie projektu,</li>
-<li>struktura części technicznej,</li>
-<li>analizy i obliczenia,</li>
-<li>opracowanie danych,</li>
-<li>tabele, wykresy i zestawienia,</li>
-<li>wsparcie przy dokumentacji,</li>
-<li>redakcja i formatowanie,</li>
-<li>omówienie wyników projektu.</li>
-</ul>
-
-</div>
-
-</div>
 
 </div>
 
 </section>
 
-<!-- ETAPY -->
+<!-- NARZĘDZIA -->
 
-<section class="section">
+<section class="section" id="narzedzia">
 
 <div class="wrap">
 
-<h2>Wsparcie na różnych etapach pracy</h2>
+<h2>Programy i narzędzia</h2>
 
 <p class="sub">
-Nie musisz zgłaszać się dopiero wtedy, gdy cała praca jest gotowa. Konsultacje mogą dotyczyć jednego konkretnego problemu albo kilku kolejnych etapów.
+Pomagamy w obsłudze <strong>popularnych programów wykorzystywanych podczas studiów</strong>, <strong>analizy danych, prowadzenia badań i realizacji projektów</strong>. Wspieramy również w korzystaniu z <strong>wielu innych narzędzi</strong> – jeśli nie widzisz swojego programu na liście, <strong>napisz do nas</strong>.
 </p>
 
-<div class="stage-grid">
+<div class="tools">
 
-<article class="card yellow">
-
-<div class="icon">🚀</div>
-
-<h3>Początek pracy</h3>
-
-<p>
-Temat, plan, struktura, cele, pytania badawcze, metodologia oraz zaplanowanie kolejnych działań.
-</p>
-
-</article>
-
-<article class="card green">
-
-<div class="icon">📝</div>
-
-<h3>Praca w toku</h3>
-
-<p>
-Konsultacje dotyczące problemów pojawiających się podczas przygotowywania części teoretycznej, badawczej, analitycznej lub technicznej.
-</p>
-
-</article>
-
-<article class="card blue">
-
-<div class="icon">🎯</div>
-
-<h3>Końcowy etap</h3>
-
-<p>
-Redakcja, korekta, formatowanie, uporządkowanie dokumentu, omówienie wyników oraz przygotowanie do prezentacji i obrony.
-</p>
-
-</article>
+<span class="pill">SPSS</span>
+<span class="pill">JASP</span>
+<span class="pill">Jamovi</span>
+<span class="pill">RStudio</span>
+<span class="pill">Word</span>
+<span class="pill">Excel</span>
+<span class="pill">PowerPoint</span>
+<span class="pill">AutoCAD</span>
+<span class="pill">Fusion 360</span>
+<span class="pill">MATLAB</span>
+<span class="pill">QGIS</span>
+<span class="pill">i wiele innych…</span>
 
 </div>
 
@@ -930,58 +1050,80 @@ Redakcja, korekta, formatowanie, uporządkowanie dokumentu, omówienie wyników 
 
 <div class="wrap">
 
-<h2>Jak wygląda współpraca?</h2>
+<h2>Jak działamy?</h2>
 
 <p class="sub">
-Najpierw poznajemy temat i zakres potrzebnego wsparcia. Następnie ustalamy, w czym konkretnie możemy pomóc.
+Prosto i konkretnie – najpierw poznajemy temat i zakres potrzebnego wsparcia, a następnie ustalamy sposób działania.
 </p>
 
 <div class="steps">
 
 <div class="step">
-
 <div class="num">1</div>
-
-<strong>Opisujesz sytuację</strong>
-
-<p>
-Podajesz temat pracy, kierunek, etap realizacji, wymagania oraz termin.
-</p>
-
+<b>Opisujesz potrzebę</b>
+<p>Napisz, czego dotyczy praca lub projekt, jaki jest zakres i termin.</p>
 </div>
 
 <div class="step">
-
 <div class="num">2</div>
-
-<strong>Analizujemy materiały</strong>
-
-<p>
-Sprawdzamy przekazane informacje i określamy możliwy zakres wsparcia.
-</p>
-
+<b>Analizujemy temat</b>
+<p>Sprawdzamy wymagania i proponujemy odpowiednią formę wsparcia.</p>
 </div>
 
 <div class="step">
-
 <div class="num">3</div>
+<b>Ustalamy szczegóły</b>
+<p>Potwierdzamy zakres konsultacji, redakcji, analizy lub innych potrzebnych działań.</p>
+</div>
 
-<strong>Ustalamy zakres</strong>
+<div class="step">
+<div class="num">4</div>
+<b>Działamy</b>
+<p>Pozostajemy w kontakcie i wspieramy Cię na ustalonym etapie.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DLACZEGO PANDA -->
+
+<section class="section">
+
+<div class="wrap">
+
+<h2>Dlaczego Panda Expert?</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>✓ Indywidualne podejście</h3>
 
 <p>
-Określamy, czy potrzebujesz konsultacji, analizy, redakcji, korekty, formatowania lub innej pomocy.
+Każde zapytanie analizujemy osobno i dopasowujemy zakres wsparcia do konkretnej pracy, projektu lub problemu.
 </p>
 
 </div>
 
-<div class="step">
+<div class="card">
 
-<div class="num">4</div>
-
-<strong>Działamy</strong>
+<h3>✓ Terminowość i kontakt</h3>
 
 <p>
-Realizujemy ustalony zakres i pozostajemy w kontakcie podczas współpracy.
+Przed rozpoczęciem współpracy ustalamy zakres pomocy, termin oraz sposób komunikacji.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>✓ Szeroki zakres narzędzi</h3>
+
+<p>
+Łączymy konsultacje akademickie z analizą danych, redakcją, technologią i wsparciem projektowym.
 </p>
 
 </div>
@@ -1000,77 +1142,176 @@ Realizujemy ustalony zakres i pozostajemy w kontakcie podczas współpracy.
 
 <h2>Najczęstsze pytania</h2>
 
-<p class="sub">
-Najważniejsze informacje dotyczące pomocy przy pracach licencjackich, magisterskich i inżynierskich.
-</p>
+<div class="cards">
 
-<div class="faq-grid">
+<article class="card">
 
-<div class="faq">
-
-<h3>Na czym polega pomoc przy pisaniu pracy?</h3>
+<h3>Na czym polega wsparcie akademickie?</h3>
 
 <p>
-Pomoc może obejmować konsultacje dotyczące planu, struktury, metodologii, badań, analizy danych, interpretacji wyników, redakcji, korekty i formatowania. Zakres zależy od konkretnego problemu oraz etapu pracy.
+Wsparcie może obejmować konsultacje dotyczące pisania i struktury pracy, metodologii, doboru literatury, analizy danych, interpretacji wyników, redakcji, korekty oraz formatowania dokumentu.
 </p>
 
-</div>
+</article>
 
-<div class="faq">
+<article class="card">
 
-<h3>Czy pomagacie przy pracach licencjackich?</h3>
+<h3>Czy pomagacie przy pracach licencjackich i magisterskich?</h3>
 
 <p>
-Tak. Wsparcie przy pracach licencjackich może obejmować m.in. planowanie struktury, metodologię, analizę danych, redakcję, korektę, formatowanie oraz przygotowanie do prezentacji.
+Tak. Zakres konsultacji może obejmować między innymi pisanie, strukturę, metodologię, analizę wyników, redakcję, korektę, formatowanie oraz przygotowanie do prezentacji i obrony.
 </p>
 
-</div>
+</article>
 
-<div class="faq">
+<article class="card">
 
-<h3>Czy pomagacie przy pracach magisterskich?</h3>
+<h3>Czy pomagacie w analizie danych?</h3>
 
 <p>
-Tak. Oferujemy konsultacje i wsparcie przy pracach magisterskich na różnych etapach – od planowania i metodologii po analizę wyników, redakcję oraz przygotowanie dokumentu do końcowego etapu pracy.
+Tak. Pomagamy w analizach statystycznych z wykorzystaniem narzędzi takich jak SPSS, JASP, Jamovi, RStudio i Excel. Zakres wsparcia zależy od rodzaju danych, metodologii i celu badania.
 </p>
 
-</div>
+</article>
 
-<div class="faq">
+<article class="card">
 
-<h3>Czy pomagacie przy pracach inżynierskich?</h3>
+<h3>Czy oferujecie redakcję i korektę?</h3>
 
 <p>
-Tak. W przypadku prac inżynierskich wsparcie może również dotyczyć części technicznej, analitycznej, projektowej, dokumentacji oraz specjalistycznego oprogramowania.
+Tak. Pomagamy w redakcji, korekcie językowej, uporządkowaniu struktury oraz formatowaniu dokumentów akademickich.
 </p>
 
-</div>
+</article>
 
-<div class="faq">
+<article class="card">
 
-<h3>Czy można zgłosić się tylko z jednym problemem?</h3>
+<h3>Czy pomagacie w formatowaniu?</h3>
 
 <p>
-Tak. Nie trzeba korzystać ze wsparcia na każdym etapie. Możesz zgłosić konkretny problem, np. metodologię, analizę danych, formatowanie albo redakcję przygotowanego tekstu.
+Tak. Wsparcie może obejmować formatowanie tekstu, nagłówków, tabel, wykresów, spisów, przypisów oraz innych elementów zgodnie z podanymi wymaganiami.
 </p>
 
-</div>
+</article>
 
-<div class="faq">
+<article class="card">
 
 <h3>Jak rozpocząć współpracę?</h3>
 
 <p>
 Skontaktuj się z nami w najwygodniejszy dla Ciebie sposób. Możesz napisać na
-<a href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert"><strong>teksty.panda.express@gmail.com</strong></a>, wysłać wiadomość przez
+<a href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert"><b>teksty.panda.express@gmail.com</b></a>, wysłać wiadomość przez
 <a href="https://m.me/PisaniePrac.PandaExpert"
 target="_blank"
-rel="noopener noreferrer"><strong>Messenger</strong></a>
+rel="noopener noreferrer"><b>Messenger</b></a>
 lub odwiedzić naszą stronę na
 <a href="https://www.facebook.com/PisaniePrac.PandaExpert"
 target="_blank"
-rel="noopener noreferrer"><strong>Facebooku</strong></a>.
+rel="noopener noreferrer"><b>Facebooku</b></a>.
 Podaj temat, zakres potrzebnego wsparcia oraz termin. Po zapoznaniu się z informacjami ustalimy możliwy zakres pomocy.
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- OPINIE -->
+
+<section class="section reviews" id="opinie">
+
+<div class="wrap">
+
+<h2>🐼 Strefa opinii 🐼</h2>
+
+<div class="review-grid">
+
+<div>
+
+<p class="sub">
+Wiemy, że wiele osób nie wystawia opinii, bo nie chce, żeby kolega z roku, wykładowca, ciocia Grażyna albo przypadkowy człowiek z internetu zobaczył ich komentarz. 😅
+</p>
+
+<p>
+<b>Tutaj możesz wypowiedzieć się ANONIMOWO. 🥷</b>
+</p>
+
+<p>
+Nie będziemy pytać kim jesteś, skąd jesteś ani dlaczego pracujesz nad projektem o 23:57 dzień przed terminem. 🤫
+</p>
+
+<p>
+Liczy się dla nas szczera opinia, a nie dane autora.
+</p>
+
+</div>
+
+<div class="review-form">
+
+<h3>⭐ Zostaw swoją opinię</h3>
+
+<div class="review-stars">
+⭐⭐⭐⭐⭐
+</div>
+
+<p>
+Kliknij poniżej, aby dodać anonimową opinię. Otworzy się formularz, przez który Twoja wiadomość trafi bezpośrednio do naszej tablicy opinii.
+</p>
+
+<a
+class="review-button"
+href="https://padlet.com/tekstypandaexpress/submission-request/8wOpvY2Dn0VBb6AY"
+target="_blank"
+rel="noopener noreferrer">
+⭐ DODAJ SWOJĄ OPINIĘ
+</a>
+
+</div>
+
+</div>
+
+<!-- SLAJDY Z OPINIAMI -->
+
+<div style="margin-top:50px;">
+
+<h3 style="font-size:30px;margin:0 0 22px;font-weight:1000;">
+💬 Opinie klientów
+</h3>
+
+<div
+class="padlet-slideshow-embed"
+style="
+width:100%;
+height:650px;
+border:3px solid #111;
+border-radius:18px;
+box-sizing:border-box;
+overflow:hidden;
+background:#fff;
+box-shadow:6px 6px 0 #111;
+">
+
+<p style="padding:0;margin:0;width:100%;height:100%;">
+
+<iframe
+src="https://padlet.com/embed/459tmoe5b62t4oh9/slideshow?autoplay=1&loop=1&duration=2"
+frameborder="0"
+allow="clipboard-write"
+loading="lazy"
+title="Opinie klientów Panda Expert"
+style="
+width:100%;
+height:100%;
+display:block;
+padding:0;
+margin:0;
+border:0;
+">
+</iframe>
+
 </p>
 
 </div>
@@ -1089,10 +1330,10 @@ Podaj temat, zakres potrzebnego wsparcia oraz termin. Po zapoznaniu się z infor
 
 <div>
 
-<h2>Potrzebujesz pomocy przy pracy?</h2>
+<h2>Masz pytanie? Napisz 🐼</h2>
 
 <p class="sub">
-Napisz, czego dotyczy praca, na jakim jesteś etapie, z czym potrzebujesz pomocy oraz jaki masz termin.
+Opisz krótko temat, zakres potrzebnej pomocy i termin. Odpowiemy na każdą wiadomość.
 </p>
 
 <div class="email">
@@ -1125,7 +1366,7 @@ PisaniePrac.PandaExpert
 
 <a
 class="cta"
-href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20pomoc%20przy%20pisaniu%20pracy&body=Dzień%20dobry%2C%0A%0ATemat%20pracy%3A%20%0AKierunek%3A%20%0AZakres%20potrzebnej%20pomocy%3A%20%0ATermin%3A%20%0A%0APozdrawiam">
+href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert&body=Dzień%20dobry%2C%0A%0ATemat%3A%20%0AZakres%20wsparcia%3A%20%0ATermin%3A%20%0A%0APozdrawiam">
 Wyślij e-mail →
 </a>
 
@@ -1160,8 +1401,6 @@ Odwiedź Facebooka →
 <b>© 2026 Panda Expert – Wsparcie Akademickie</b>
 
 <span>
-<a href="https://pandaexpert.pl/">Strona główna</a>
-&nbsp; | &nbsp;
 Kontakt: teksty.panda.express@gmail.com
 </span>
 
