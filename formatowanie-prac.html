@@ -1,0 +1,976 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Formatowanie prac | Word, przypisy i bibliografia | Panda Expert</title>
+
+<meta name="description" content="Formatowanie prac licencjackich, magisterskich i inżynierskich. Word, style, spis treści, przypisy, bibliografia, tabele, wykresy i wymagania uczelni. Panda Expert.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="Panda Expert">
+<meta name="theme-color" content="#1f7a31">
+
+<link rel="canonical" href="https://pandaexpert.pl/formatowanie-prac.html">
+<link rel="icon" href="panda-logo.jpg">
+
+<meta property="og:locale" content="pl_PL">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pandaexpert.pl/formatowanie-prac.html">
+<meta property="og:site_name" content="Panda Expert">
+<meta property="og:title" content="Formatowanie prac | Panda Expert">
+<meta property="og:description" content="Formatowanie prac akademickich w Wordzie: style, spisy treści, przypisy, bibliografia, tabele, wykresy i wytyczne uczelni.">
+<meta property="og:image" content="https://pandaexpert.pl/panda-akcja.png">
+<meta property="og:image:alt" content="Panda Expert – formatowanie prac">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Formatowanie prac | Panda Expert">
+<meta name="twitter:description" content="Formatowanie prac akademickich zgodnie z wytycznymi uczelni.">
+<meta name="twitter:image" content="https://pandaexpert.pl/panda-akcja.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Formatowanie prac akademickich",
+  "url": "https://pandaexpert.pl/formatowanie-prac.html",
+  "description": "Formatowanie prac licencjackich, magisterskich, inżynierskich i innych dokumentów akademickich.",
+  "provider": {
+    "@type": "ProfessionalService",
+    "@id": "https://pandaexpert.pl/#business",
+    "name": "Panda Expert",
+    "url": "https://pandaexpert.pl/"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Polska"
+  }
+}
+</script>
+
+<style>
+
+:root{
+  --green:#1f7a31;
+  --yellow:#ffd51e;
+  --blue:#0877d9;
+  --ink:#101820;
+  --paper:#fffdf4;
+}
+
+*{box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+  margin:0;
+  font-family:Inter,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.6;
+}
+
+a{color:inherit;}
+
+.wrap{
+  max-width:1160px;
+  margin:auto;
+  padding:0 22px;
+}
+
+/* MENU */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(255,253,244,.97);
+  border-bottom:3px solid #111;
+}
+
+.nav{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:1000;
+  text-decoration:none;
+}
+
+.brand img{
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid var(--green);
+}
+
+.brand b{font-size:21px;}
+
+.brand small{
+  display:block;
+  font-weight:800;
+  color:var(--green);
+}
+
+nav{
+  display:flex;
+  gap:18px;
+  font-weight:800;
+}
+
+nav a{
+  text-decoration:none;
+  white-space:nowrap;
+}
+
+.cta{
+  display:inline-block;
+  background:var(--yellow);
+  color:#111;
+  border:3px solid #111;
+  box-shadow:5px 5px 0 #111;
+  padding:13px 20px;
+  font-weight:1000;
+  border-radius:10px;
+  text-decoration:none;
+  transition:.15s ease;
+}
+
+.cta:hover{
+  transform:translate(2px,2px);
+  box-shadow:3px 3px 0 #111;
+}
+
+/* HERO */
+
+.hero{
+  padding:78px 0;
+  background:#fff7bf;
+  border-bottom:4px solid #111;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.35fr .65fr;
+  gap:40px;
+  align-items:center;
+}
+
+.eyebrow{
+  display:inline-block;
+  background:white;
+  border:2px solid #111;
+  border-radius:999px;
+  padding:7px 13px;
+  font-weight:900;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  font-size:clamp(42px,6vw,70px);
+  line-height:1.03;
+  letter-spacing:-2px;
+  text-transform:uppercase;
+  margin:0 0 24px;
+}
+
+.hero p{
+  font-size:20px;
+  margin:0 0 28px;
+}
+
+.hero-box{
+  background:white;
+  border:3px solid #111;
+  border-radius:20px;
+  box-shadow:7px 7px 0 #111;
+  padding:30px;
+}
+
+.hero-box .panda{
+  font-size:72px;
+  line-height:1;
+}
+
+.hero-box h2{
+  margin:15px 0 10px;
+  font-size:27px;
+}
+
+.hero-box p{
+  font-size:17px;
+  margin:0;
+}
+
+/* SEKCJE */
+
+.section{padding:78px 0;}
+
+.section h2{
+  font-size:clamp(34px,5vw,52px);
+  margin:0 0 20px;
+  text-transform:uppercase;
+  letter-spacing:-1.5px;
+  line-height:1.12;
+}
+
+.sub{
+  font-size:19px;
+  margin:0 0 36px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+}
+
+.card{
+  min-width:0;
+  background:white;
+  border:3px solid #111;
+  border-radius:18px;
+  padding:26px;
+  box-shadow:6px 6px 0 #111;
+}
+
+.yellow{background:#fff7bf;}
+.green{background:#e8f6e9;}
+.blue{background:#e7f3ff;}
+
+.icon{font-size:35px;}
+
+.card h3{
+  font-size:22px;
+  margin:8px 0 12px;
+  line-height:1.25;
+}
+
+.card p{margin:0;}
+
+/* TREŚĆ */
+
+.content-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:26px;
+}
+
+.content-box{
+  background:white;
+  border:3px solid #111;
+  border-radius:18px;
+  padding:30px;
+  box-shadow:6px 6px 0 #111;
+}
+
+.content-box h3{
+  margin:0 0 14px;
+  font-size:25px;
+}
+
+.content-box p{
+  margin:0 0 15px;
+}
+
+.content-box p:last-child{margin-bottom:0;}
+
+/* PROGRAM */
+
+.tools{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.pill{
+  border:2px solid #111;
+  background:white;
+  padding:10px 15px;
+  border-radius:999px;
+  font-weight:900;
+}
+
+/* PROCES */
+
+.process{
+  background:var(--ink);
+  color:white;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:18px;
+}
+
+.step{
+  border:2px solid white;
+  border-radius:16px;
+  padding:22px;
+}
+
+.num{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  background:var(--yellow);
+  color:#111;
+  border-radius:50%;
+  font-weight:1000;
+  margin-bottom:12px;
+}
+
+.step p{margin-bottom:0;}
+
+/* FAQ */
+
+.faq-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.faq{
+  background:white;
+  border:3px solid #111;
+  border-radius:18px;
+  padding:25px;
+  box-shadow:5px 5px 0 #111;
+}
+
+.faq h3{
+  margin:0 0 10px;
+  font-size:21px;
+}
+
+.faq p{margin:0;}
+
+/* KONTAKT */
+
+.contact{
+  background:var(--green);
+  color:white;
+  border-top:4px solid #111;
+}
+
+.contactbox{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:28px;
+  align-items:center;
+}
+
+.contact-actions{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:16px;
+}
+
+.contact-actions .cta{
+  width:100%;
+  max-width:340px;
+  text-align:center;
+}
+
+.email{
+  font-size:clamp(20px,3vw,31px);
+  font-weight:1000;
+  overflow-wrap:anywhere;
+}
+
+.contact-link{
+  font-weight:800;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+
+.disclaimer{
+  margin-top:30px;
+  font-size:14px;
+  opacity:.92;
+}
+
+/* FOOTER */
+
+footer{
+  background:#0b0f12;
+  color:#ddd;
+  padding:28px 0;
+}
+
+.footer{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+/* TABLETY */
+
+@media(max-width:850px){
+
+  nav{display:none;}
+
+  .hero-grid,
+  .content-grid,
+  .contactbox{
+    grid-template-columns:1fr;
+  }
+
+  .cards{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .steps{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+/* TELEFONY */
+
+@media(max-width:620px){
+
+  .wrap{
+    padding-left:18px;
+    padding-right:18px;
+  }
+
+  .section,
+  .hero{
+    padding:50px 0;
+  }
+
+  .hero h1{
+    font-size:39px;
+    letter-spacing:-1px;
+  }
+
+  .hero p,
+  .sub{
+    font-size:18px;
+  }
+
+  .section h2{
+    font-size:34px;
+    letter-spacing:-1px;
+  }
+
+  .cards,
+  .steps,
+  .faq-grid{
+    grid-template-columns:minmax(0,1fr);
+  }
+
+  .nav{
+    min-height:68px;
+    gap:8px;
+  }
+
+  .brand{
+    gap:8px;
+  }
+
+  .brand img{
+    width:46px;
+    height:46px;
+  }
+
+  .brand b{font-size:16px;}
+  .brand small{font-size:12px;}
+
+  header .cta{
+    padding:10px 12px;
+    font-size:13px;
+    white-space:nowrap;
+  }
+
+  .contact-actions{
+    width:100%;
+  }
+
+  .contact-actions .cta{
+    max-width:none;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="wrap nav">
+
+<a class="brand" href="/">
+<img src="panda-logo.jpg" alt="Panda Expert">
+<div>
+<b>PANDA EXPERT</b>
+<small>Wsparcie Akademickie</small>
+</div>
+</a>
+
+<nav>
+<a href="#zakres">Zakres</a>
+<a href="#word">Word</a>
+<a href="#jak">Jak działamy</a>
+<a href="#faq">FAQ</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+
+<a class="cta" href="#kontakt">Napisz do nas</a>
+
+</div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero">
+<div class="wrap hero-grid">
+
+<div>
+
+<div class="eyebrow">📄 Formatowanie prac</div>
+
+<h1>Formatowanie prac akademickich</h1>
+
+<p>
+Panda Expert oferuje <strong>formatowanie prac licencjackich, magisterskich i inżynierskich</strong>. Pomagamy uporządkować dokument w programie Word, przygotować style, spis treści, numerację stron, przypisy, bibliografię, tabele i wykresy oraz dostosować dokument do <strong>wytycznych uczelni</strong>.
+</p>
+
+<a class="cta" href="#kontakt">Zapytaj o formatowanie →</a>
+
+</div>
+
+<div class="hero-box">
+
+<div class="panda">🐼📄</div>
+
+<h2>Dokument nie chce współpracować?</h2>
+
+<p>
+Prześlij plik oraz wytyczne uczelni. Sprawdzimy, jakie elementy wymagają uporządkowania i dostosowania.
+</p>
+
+</div>
+
+</div>
+</section>
+
+<!-- ZAKRES -->
+
+<section class="section" id="zakres">
+<div class="wrap">
+
+<h2>Co możemy sformatować?</h2>
+
+<p class="sub">
+Pomagamy uporządkować zarówno <strong>cały dokument</strong>, jak i jego poszczególne elementy. Zakres formatowania ustalamy na podstawie pliku oraz wymagań uczelni.
+</p>
+
+<div class="cards">
+
+<article class="card yellow">
+<div class="icon">📝</div>
+<h3>Style i nagłówki</h3>
+<p>
+Ujednolicenie nagłówków, tekstu głównego, akapitów oraz innych elementów dokumentu.
+</p>
+</article>
+
+<article class="card green">
+<div class="icon">📑</div>
+<h3>Spis treści</h3>
+<p>
+Przygotowanie automatycznego spisu treści opartego na prawidłowo zastosowanych stylach nagłówków.
+</p>
+</article>
+
+<article class="card blue">
+<div class="icon">🔢</div>
+<h3>Numeracja stron</h3>
+<p>
+Ustawienie numeracji stron, podziałów sekcji oraz innych elementów związanych z układem dokumentu.
+</p>
+</article>
+
+<article class="card green">
+<div class="icon">🔖</div>
+<h3>Przypisy i cytowania</h3>
+<p>
+Ujednolicenie wyglądu i sposobu prezentacji przypisów oraz cytowań zgodnie z przekazanymi zasadami.
+</p>
+</article>
+
+<article class="card blue">
+<div class="icon">📚</div>
+<h3>Bibliografia</h3>
+<p>
+Uporządkowanie wyglądu bibliografii i ujednolicenie sposobu zapisu poszczególnych pozycji.
+</p>
+</article>
+
+<article class="card yellow">
+<div class="icon">📊</div>
+<h3>Tabele i wykresy</h3>
+<p>
+Ujednolicenie tabel, wykresów, podpisów, numeracji oraz sposobu prezentacji materiałów graficznych.
+</p>
+</article>
+
+</div>
+
+</div>
+</section>
+
+<!-- WORD -->
+
+<section class="section" id="word">
+<div class="wrap">
+
+<h2>Formatowanie w Microsoft Word</h2>
+
+<p class="sub">
+Word oferuje wiele funkcji ułatwiających przygotowanie dużego dokumentu, ale ich nieprawidłowe użycie może powodować problemy ze spisem treści, numeracją, nagłówkami czy układem stron.
+</p>
+
+<div class="content-grid">
+
+<div class="content-box">
+
+<h3>💻 Porządkowanie dokumentu</h3>
+
+<p>
+Pomagamy uporządkować <strong>style, nagłówki, akapity, marginesy, interlinie, wcięcia i podziały stron</strong>.
+</p>
+
+<p>
+Dzięki temu dokument zachowuje spójny wygląd i łatwiej wprowadzać w nim późniejsze zmiany.
+</p>
+
+</div>
+
+<div class="content-box">
+
+<h3>⚙️ Automatyczne elementy</h3>
+
+<p>
+Możemy pomóc przygotować <strong>automatyczny spis treści, numerację stron oraz uporządkowaną strukturę nagłówków</strong>.
+</p>
+
+<p>
+W zależności od dokumentu możliwe jest również uporządkowanie podpisów tabel, wykresów i innych elementów.
+</p>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- WYTYCZNE -->
+
+<section class="section">
+<div class="wrap">
+
+<h2>Formatowanie zgodnie z wytycznymi uczelni</h2>
+
+<p class="sub">
+Uczelnie i wydziały mogą stosować różne wymagania dotyczące przygotowania pracy. Dlatego przed formatowaniem warto przesłać <strong>aktualne wytyczne dotyczące dokumentu</strong>.
+</p>
+
+<div class="cards">
+
+<article class="card green">
+<div class="icon">📐</div>
+<h3>Marginesy i układ strony</h3>
+<p>
+Dostosowanie marginesów, orientacji, rozmiaru strony oraz podstawowego układu dokumentu.
+</p>
+</article>
+
+<article class="card yellow">
+<div class="icon">🔤</div>
+<h3>Czcionka i akapity</h3>
+<p>
+Ujednolicenie kroju i wielkości czcionki, interlinii, wcięć, odstępów oraz wyrównania tekstu.
+</p>
+</article>
+
+<article class="card blue">
+<div class="icon">📋</div>
+<h3>Struktura dokumentu</h3>
+<p>
+Uporządkowanie tytułów rozdziałów, podrozdziałów, spisów oraz innych wymaganych części dokumentu.
+</p>
+</article>
+
+</div>
+
+</div>
+</section>
+
+<!-- RODZAJE -->
+
+<section class="section">
+<div class="wrap">
+
+<h2>Jakie dokumenty formatujemy?</h2>
+
+<p class="sub">
+Wsparcie może dotyczyć różnych dokumentów akademickich i materiałów przygotowywanych podczas studiów.
+</p>
+
+<div class="cards">
+
+<article class="card yellow">
+<div class="icon">🎓</div>
+<h3>Prace licencjackie</h3>
+<p>
+Formatowanie dokumentu zgodnie z przekazanymi wymaganiami dotyczącymi pracy licencjackiej.
+</p>
+</article>
+
+<article class="card green">
+<div class="icon">📖</div>
+<h3>Prace magisterskie</h3>
+<p>
+Uporządkowanie rozbudowanych dokumentów, spisów, tabel, wykresów, przypisów i bibliografii.
+</p>
+</article>
+
+<article class="card blue">
+<div class="icon">⚙️</div>
+<h3>Prace inżynierskie</h3>
+<p>
+Formatowanie dokumentów zawierających między innymi tabele, schematy, ilustracje, wykresy i elementy techniczne.
+</p>
+</article>
+
+<article class="card green">
+<div class="icon">📊</div>
+<h3>Raporty i analizy</h3>
+<p>
+Porządkowanie raportów, analiz, zestawień oraz dokumentów zawierających dane i wyniki badań.
+</p>
+</article>
+
+<article class="card blue">
+<div class="icon">📝</div>
+<h3>Projekty zaliczeniowe</h3>
+<p>
+Formatowanie projektów i innych materiałów przygotowywanych na potrzeby zajęć akademickich.
+</p>
+</article>
+
+<article class="card yellow">
+<div class="icon">📄</div>
+<h3>Inne dokumenty</h3>
+<p>
+Możemy również pomóc w uporządkowaniu innych dokumentów przygotowywanych w programie Word.
+</p>
+</article>
+
+</div>
+
+</div>
+</section>
+
+<!-- NARZĘDZIA -->
+
+<section class="section">
+<div class="wrap">
+
+<h2>Narzędzia</h2>
+
+<p class="sub">
+Formatowanie wykonujemy przede wszystkim w programie <strong>Microsoft Word</strong>. W zależności od materiału możemy również pracować z elementami przygotowanymi w innych programach.
+</p>
+
+<div class="tools">
+<span class="pill">Microsoft Word</span>
+<span class="pill">Excel</span>
+<span class="pill">PowerPoint</span>
+<span class="pill">PDF</span>
+<span class="pill">tabele</span>
+<span class="pill">wykresy</span>
+</div>
+
+</div>
+</section>
+
+<!-- PROCES -->
+
+<section class="section process" id="jak">
+<div class="wrap">
+
+<h2>Jak wygląda współpraca?</h2>
+
+<p class="sub">
+Najlepiej przesłać dokument razem z wytycznymi dotyczącymi jego przygotowania.
+</p>
+
+<div class="steps">
+
+<div class="step">
+<div class="num">1</div>
+<strong>Przesyłasz dokument</strong>
+<p>Wysyłasz plik, wytyczne uczelni oraz informację o terminie.</p>
+</div>
+
+<div class="step">
+<div class="num">2</div>
+<strong>Sprawdzamy formatowanie</strong>
+<p>Oceniamy układ dokumentu i elementy wymagające uporządkowania.</p>
+</div>
+
+<div class="step">
+<div class="num">3</div>
+<strong>Ustalamy zakres</strong>
+<p>Określamy, jakie elementy należy poprawić i jakie wymagania zastosować.</p>
+</div>
+
+<div class="step">
+<div class="num">4</div>
+<strong>Porządkujemy dokument</strong>
+<p>Wprowadzamy uzgodnione zmiany w formatowaniu i strukturze pliku.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- FAQ -->
+
+<section class="section" id="faq">
+<div class="wrap">
+
+<h2>Najczęstsze pytania</h2>
+
+<div class="faq-grid">
+
+<div class="faq">
+<h3>Czy formatujecie prace magisterskie i licencjackie?</h3>
+<p>
+Tak. Pomagamy w formatowaniu prac licencjackich, magisterskich, inżynierskich oraz innych dokumentów akademickich.
+</p>
+</div>
+
+<div class="faq">
+<h3>Czy możecie zrobić automatyczny spis treści?</h3>
+<p>
+Tak. Możemy uporządkować style nagłówków i przygotować na ich podstawie automatyczny spis treści.
+</p>
+</div>
+
+<div class="faq">
+<h3>Czy formatujecie pracę zgodnie z wytycznymi uczelni?</h3>
+<p>
+Tak. W tym celu należy przesłać aktualne wymagania uczelni lub wydziału dotyczące przygotowania dokumentu.
+</p>
+</div>
+
+<div class="faq">
+<h3>Czy poprawiacie numerację stron?</h3>
+<p>
+Tak. Możemy pomóc uporządkować numerację stron, sekcje i inne elementy wpływające na układ dokumentu.
+</p>
+</div>
+
+<div class="faq">
+<h3>Czy formatujecie tabele i wykresy?</h3>
+<p>
+Tak. Zakres może obejmować ujednolicenie tabel, wykresów, podpisów oraz ich numeracji.
+</p>
+</div>
+
+<div class="faq">
+<h3>Co wysłać do wyceny?</h3>
+<p>
+Najlepiej przesłać dokument, wytyczne dotyczące formatowania, informację o potrzebnym zakresie zmian oraz termin.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- KONTAKT -->
+
+<section class="section contact" id="kontakt">
+<div class="wrap contactbox">
+
+<div>
+
+<h2>Potrzebujesz formatowania pracy?</h2>
+
+<p class="sub">
+Prześlij dokument, wytyczne uczelni, informację o zakresie potrzebnych zmian oraz termin.
+</p>
+
+<div class="email">
+<a class="contact-link"
+href="mailto:teksty.panda.express@gmail.com?subject=Formatowanie%20pracy%20-%20Panda%20Expert">
+teksty.panda.express@gmail.com
+</a>
+</div>
+
+<p class="disclaimer">
+Panda Expert świadczy usługi konsultacyjne, edukacyjne, redakcyjne i techniczne. Formatowanie dotyczy przygotowania i uporządkowania własnego dokumentu klienta zgodnie z przekazanymi wymaganiami.
+</p>
+
+</div>
+
+<div class="contact-actions">
+
+<a class="cta"
+href="mailto:teksty.panda.express@gmail.com?subject=Formatowanie%20pracy%20-%20Panda%20Expert&body=Dzień%20dobry%2C%0A%0ARodzaj%20dokumentu%3A%20%0AObjętość%3A%20%0AZakres%20formatowania%3A%20%0ATermin%3A%20%0A%0APozdrawiam">
+Wyślij e-mail →
+</a>
+
+<a class="cta"
+href="https://m.me/PisaniePrac.PandaExpert"
+target="_blank"
+rel="noopener noreferrer">
+Napisz na Messengerze →
+</a>
+
+<a class="cta"
+href="https://www.facebook.com/PisaniePrac.PandaExpert"
+target="_blank"
+rel="noopener noreferrer">
+Odwiedź Facebooka →
+</a>
+
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap footer">
+<b>© 2026 Panda Expert – Wsparcie Akademickie</b>
+<span>Kontakt: teksty.panda.express@gmail.com</span>
+</div>
+</footer>
+
+</body>
+</html>
