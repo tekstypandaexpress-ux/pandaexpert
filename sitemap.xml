@@ -25,4 +25,10 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://pandaexpert.pl/analiza-danych-statystyka.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
