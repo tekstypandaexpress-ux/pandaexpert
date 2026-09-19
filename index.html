@@ -314,11 +314,14 @@ nav a{
 
 .kierunki-grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(3,minmax(0,1fr));
   gap:20px;
+  width:100%;
 }
 
 .kierunek-card{
+  min-width:0;
+  width:100%;
   background:white;
   border:3px solid #111;
   border-radius:18px;
@@ -352,8 +355,12 @@ nav a{
 
 .kierunek-card:nth-child(7){
   background:#e8f6e9;
-  grid-column:2;
 }
+
+@media(min-width:851px){
+  .kierunek-card:nth-child(7){
+    grid-column:2;
+  }
 }
 
 .kierunek-card .icon{
@@ -364,12 +371,18 @@ nav a{
   font-size:21px;
   margin:8px 0 12px;
   line-height:1.25;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:break-word;
 }
 
 .kierunek-card p{
   margin:0;
   font-size:16px;
   line-height:1.6;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:break-word;
 }
 
 /* JAK DZIAŁAMY */
