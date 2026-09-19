@@ -7,7 +7,7 @@
 
 <title>Analiza danych i statystyka | SPSS, JASP, Jamovi, R | Panda Expert</title>
 
-<meta name="description" content="Pomoc w analizie danych i statystyce: SPSS, JASP, Jamovi, RStudio i Excel. Dobór metod, analiza ankiet, tabele, wykresy i interpretacja wyników. Panda Expert.">
+<meta name="description" content="Pomoc w analizie danych i statystyce: SPSS, JASP, Jamovi, RStudio i Excel. Dobór metod, analiza wyników, tabele, wykresy i interpretacja danych.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="author" content="Panda Expert">
 <meta name="theme-color" content="#1f7a31">
@@ -20,32 +20,44 @@
 <meta property="og:url" content="https://pandaexpert.pl/analiza-danych-statystyka.html">
 <meta property="og:site_name" content="Panda Expert">
 <meta property="og:title" content="Analiza danych i statystyka | Panda Expert">
-<meta property="og:description" content="Wsparcie w analizie danych, statystyce, badaniach, ankietach oraz interpretacji wyników.">
+<meta property="og:description" content="Wsparcie w analizie danych, statystyce, doborze metod, przygotowaniu tabel i wykresów oraz interpretacji wyników.">
 <meta property="og:image" content="https://pandaexpert.pl/panda-akcja.png">
 <meta property="og:image:alt" content="Panda Expert – analiza danych i statystyka">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Analiza danych i statystyka | Panda Expert">
-<meta name="twitter:description" content="SPSS, JASP, Jamovi, RStudio, Excel, analiza ankiet i interpretacja wyników.">
+<meta name="twitter:description" content="Analiza danych w SPSS, JASP, Jamovi, RStudio i Excel – Panda Expert.">
 <meta name="twitter:image" content="https://pandaexpert.pl/panda-akcja.png">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Analiza danych i statystyka",
+  "@type": "ProfessionalService",
+  "@id": "https://pandaexpert.pl/#business",
+  "name": "Panda Expert",
   "url": "https://pandaexpert.pl/analiza-danych-statystyka.html",
-  "description": "Wsparcie w analizie danych, statystyce, doborze metod, opracowaniu ankiet oraz interpretacji wyników.",
-  "provider": {
-    "@type": "ProfessionalService",
-    "@id": "https://pandaexpert.pl/#business",
-    "name": "Panda Expert",
-    "url": "https://pandaexpert.pl/"
-  },
+  "image": "https://pandaexpert.pl/panda-akcja.png",
+  "logo": "https://pandaexpert.pl/panda-logo.jpg",
+  "description": "Wsparcie w analizie danych i statystyce, doborze metod, przygotowaniu tabel i wykresów oraz interpretacji wyników.",
+  "email": "mailto:teksty.panda.express@gmail.com",
+  "sameAs": [
+    "https://www.facebook.com/PisaniePrac.PandaExpert"
+  ],
   "areaServed": {
     "@type": "Country",
     "name": "Polska"
-  }
+  },
+  "knowsLanguage": "pl",
+  "serviceType": [
+    "Analiza danych",
+    "Analizy statystyczne",
+    "SPSS",
+    "JASP",
+    "Jamovi",
+    "RStudio",
+    "Excel",
+    "Konsultacje akademickie"
+  ]
 }
 </script>
 
@@ -55,23 +67,31 @@
   --green:#1f7a31;
   --yellow:#ffd51e;
   --blue:#0877d9;
+  --red:#e62d20;
   --ink:#101820;
   --paper:#fffdf4;
 }
 
-*{box-sizing:border-box;}
+*{
+  box-sizing:border-box;
+}
 
-html{scroll-behavior:smooth;}
+html{
+  scroll-behavior:smooth;
+}
 
 body{
   margin:0;
   font-family:Inter,Arial,sans-serif;
   color:var(--ink);
   background:var(--paper);
-  line-height:1.6;
+  line-height:1.55;
 }
 
-a{color:inherit;}
+a{
+  text-decoration:none;
+  color:inherit;
+}
 
 .wrap{
   max-width:1160px;
@@ -90,7 +110,7 @@ header{
 }
 
 .nav{
-  min-height:76px;
+  height:76px;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -102,7 +122,6 @@ header{
   align-items:center;
   gap:12px;
   font-weight:1000;
-  text-decoration:none;
 }
 
 .brand img{
@@ -113,7 +132,9 @@ header{
   border:3px solid var(--green);
 }
 
-.brand b{font-size:21px;}
+.brand b{
+  font-size:21px;
+}
 
 .brand small{
   display:block;
@@ -128,20 +149,17 @@ nav{
 }
 
 nav a{
-  text-decoration:none;
   white-space:nowrap;
 }
 
 .cta{
   display:inline-block;
   background:var(--yellow);
-  color:#111;
   border:3px solid #111;
   box-shadow:5px 5px 0 #111;
   padding:13px 20px;
   font-weight:1000;
   border-radius:10px;
-  text-decoration:none;
   transition:.15s ease;
 }
 
@@ -150,73 +168,79 @@ nav a{
   box-shadow:3px 3px 0 #111;
 }
 
-/* HERO */
+.secondary{
+  background:white;
+}
 
-.hero{
-  padding:78px 0;
-  background:#e7f3ff;
+/* BANER */
+
+.panda-banner{
+  position:relative;
+  width:100%;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background:#ffd51e;
   border-bottom:4px solid #111;
 }
 
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.35fr .65fr;
-  gap:40px;
-  align-items:center;
+.panda-banner picture{
+  display:block;
+  width:100%;
 }
 
-.eyebrow{
-  display:inline-block;
-  background:white;
-  border:2px solid #111;
-  border-radius:999px;
-  padding:7px 13px;
-  font-weight:900;
-  margin-bottom:20px;
-}
-
-.hero h1{
-  font-size:clamp(42px,6vw,70px);
-  line-height:1.03;
-  letter-spacing:-2px;
-  text-transform:uppercase;
-  margin:0 0 24px;
-}
-
-.hero p{
-  font-size:20px;
-  margin:0 0 28px;
-}
-
-.hero-box{
-  background:white;
-  border:3px solid #111;
-  border-radius:20px;
-  box-shadow:7px 7px 0 #111;
-  padding:30px;
-}
-
-.hero-box .panda{
-  font-size:72px;
-  line-height:1;
-}
-
-.hero-box h2{
-  margin:15px 0 10px;
-  font-size:27px;
-}
-
-.hero-box p{
-  font-size:17px;
+.panda-banner img{
+  display:block;
+  width:100%;
+  height:auto;
   margin:0;
+  padding:0;
+}
+
+.banner-hotspot{
+  position:absolute;
+  display:block;
+  z-index:5;
+  cursor:pointer;
+}
+
+.banner-email{
+  left:6.8%;
+  top:63.5%;
+  width:12.7%;
+  height:10%;
+}
+
+.banner-messenger{
+  left:20.1%;
+  top:63.5%;
+  width:12.7%;
+  height:10%;
+}
+
+.banner-facebook{
+  left:33.4%;
+  top:63.5%;
+  width:12.7%;
+  height:10%;
+}
+
+.banner-contact{
+  left:6.8%;
+  top:77%;
+  width:33.2%;
+  height:10%;
 }
 
 /* SEKCJE */
 
-.section{padding:78px 0;}
+.section{
+  padding:78px 0;
+}
 
+.section h1,
 .section h2{
-  font-size:clamp(34px,5vw,52px);
+  font-size:clamp(34px,5vw,54px);
   margin:0 0 20px;
   text-transform:uppercase;
   letter-spacing:-1.5px;
@@ -225,17 +249,31 @@ nav a{
 
 .sub{
   font-size:19px;
+  width:100%;
+  max-width:none;
   margin:0 0 36px;
+  text-align:left;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:normal;
 }
+
+.section p{
+  text-align:left;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:normal;
+}
+
+/* KAFELKI */
 
 .cards{
   display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-template-columns:repeat(3,1fr);
   gap:20px;
 }
 
 .card{
-  min-width:0;
   background:white;
   border:3px solid #111;
   border-radius:18px;
@@ -243,64 +281,93 @@ nav a{
   box-shadow:6px 6px 0 #111;
 }
 
-.yellow{background:#fff7bf;}
-.green{background:#e8f6e9;}
-.blue{background:#e7f3ff;}
-
-.icon{font-size:35px;}
+.icon{
+  font-size:34px;
+}
 
 .card h3{
   font-size:22px;
-  margin:8px 0 12px;
+  margin:8px 0;
   line-height:1.25;
+  hyphens:none;
+  word-break:normal;
 }
 
-.card p{margin:0;}
-
-/* PROGRAMY */
-
-.tools{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
+.card p{
+  text-align:left;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:normal;
 }
 
-.pill{
-  border:2px solid #111;
-  background:white;
-  padding:10px 15px;
-  border-radius:999px;
-  font-weight:900;
+.green{
+  background:#e8f6e9;
 }
 
-/* TREŚĆ */
+.blue{
+  background:#e7f3ff;
+}
 
-.content-grid{
+.yellow{
+  background:#fff7bf;
+}
+
+/* KIERUNKI */
+
+.kierunki-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:26px;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+  width:100%;
 }
 
-.content-box{
+.kierunek-card{
+  min-width:0;
+  width:100%;
   background:white;
   border:3px solid #111;
   border-radius:18px;
-  padding:30px;
+  padding:24px;
   box-shadow:6px 6px 0 #111;
 }
 
-.content-box h3{
-  margin:0 0 14px;
-  font-size:25px;
+.kierunek-card:nth-child(1){background:#fff7bf;}
+.kierunek-card:nth-child(2){background:#e8f6e9;}
+.kierunek-card:nth-child(3){background:#e7f3ff;}
+.kierunek-card:nth-child(4){background:#fff7bf;}
+.kierunek-card:nth-child(5){background:#e8f6e9;}
+.kierunek-card:nth-child(6){background:#e7f3ff;}
+.kierunek-card:nth-child(7){background:#e8f6e9;}
+
+@media(min-width:851px){
+  .kierunek-card:nth-child(7){
+    grid-column:2;
+  }
 }
 
-.content-box p{
-  margin:0 0 15px;
+.kierunek-card .icon{
+  font-size:34px;
 }
 
-.content-box p:last-child{margin-bottom:0;}
+.kierunek-card h3{
+  font-size:21px;
+  margin:8px 0 12px;
+  line-height:1.25;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:break-word;
+}
 
-/* PROCES */
+.kierunek-card p{
+  margin:0;
+  font-size:16px;
+  line-height:1.6;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:break-word;
+}
+
+/* JAK DZIAŁAMY */
 
 .process{
   background:var(--ink);
@@ -309,7 +376,7 @@ nav a{
 
 .steps{
   display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
+  grid-template-columns:repeat(4,1fr);
   gap:18px;
 }
 
@@ -317,6 +384,13 @@ nav a{
   border:2px solid white;
   border-radius:16px;
   padding:22px;
+}
+
+.step p{
+  text-align:left;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:normal;
 }
 
 .num{
@@ -331,30 +405,29 @@ nav a{
   margin-bottom:12px;
 }
 
-.step p{margin-bottom:0;}
+/* NARZĘDZIA */
 
-/* FAQ */
-
-.faq-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
+.tools{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
 }
 
-.faq{
+.pill{
+  border:2px solid #111;
   background:white;
-  border:3px solid #111;
-  border-radius:18px;
-  padding:25px;
-  box-shadow:5px 5px 0 #111;
+  padding:9px 13px;
+  border-radius:999px;
+  font-weight:800;
 }
 
-.faq h3{
-  margin:0 0 10px;
-  font-size:21px;
+.seo-link{
+  display:inline-block;
+  margin-top:8px;
+  font-weight:900;
+  text-decoration:underline;
+  text-underline-offset:3px;
 }
-
-.faq p{margin:0;}
 
 /* KONTAKT */
 
@@ -371,6 +444,11 @@ nav a{
   align-items:center;
 }
 
+.contact .cta{
+  background:var(--yellow);
+  color:#111;
+}
+
 .contact-actions{
   display:flex;
   flex-direction:column;
@@ -380,8 +458,18 @@ nav a{
 
 .contact-actions .cta{
   width:100%;
-  max-width:340px;
+  max-width:330px;
   text-align:center;
+}
+
+.contact-link{
+  text-decoration:underline;
+  text-underline-offset:3px;
+  font-weight:800;
+}
+
+.contact-link:hover{
+  text-decoration-thickness:2px;
 }
 
 .email{
@@ -390,16 +478,66 @@ nav a{
   overflow-wrap:anywhere;
 }
 
-.contact-link{
-  font-weight:800;
-  text-decoration:underline;
-  text-underline-offset:3px;
+.note{
+  font-size:14px;
+  opacity:.9;
 }
 
-.disclaimer{
-  margin-top:30px;
-  font-size:14px;
-  opacity:.92;
+/* OPINIE */
+
+.reviews{
+  background:#e8f6e9;
+  border-top:4px solid #111;
+  border-bottom:4px solid #111;
+}
+
+.review-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  align-items:start;
+}
+
+.review-form{
+  background:white;
+  border:3px solid #111;
+  border-radius:18px;
+  padding:30px;
+  box-shadow:6px 6px 0 #111;
+}
+
+.review-form h3{
+  font-size:25px;
+  margin:0 0 12px;
+}
+
+.review-form p{
+  margin:0 0 22px;
+}
+
+.review-stars{
+  font-size:34px;
+  letter-spacing:4px;
+  margin:4px 0 18px;
+}
+
+.review-button{
+  display:block;
+  width:100%;
+  background:var(--yellow);
+  border:3px solid #111;
+  box-shadow:5px 5px 0 #111;
+  padding:16px 18px;
+  font-size:18px;
+  font-weight:1000;
+  text-align:center;
+  border-radius:10px;
+  transition:.15s ease;
+}
+
+.review-button:hover{
+  transform:translate(2px,2px);
+  box-shadow:3px 3px 0 #111;
 }
 
 /* FOOTER */
@@ -421,60 +559,92 @@ footer{
 
 @media(max-width:850px){
 
-  nav{display:none;}
+  nav{
+    display:none;
+  }
 
-  .hero-grid,
-  .content-grid,
-  .contactbox{
+  .contactbox,
+  .review-grid{
     grid-template-columns:1fr;
   }
 
   .cards{
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr;
+  }
+
+  .kierunki-grid{
+    grid-template-columns:repeat(2,1fr);
   }
 
   .steps{
     grid-template-columns:1fr 1fr;
   }
+
+  .brand b{
+    font-size:17px;
+  }
 }
 
 /* TELEFONY */
 
-@media(max-width:620px){
+@media(max-width:520px){
 
   .wrap{
     padding-left:18px;
     padding-right:18px;
   }
 
-  .section,
-  .hero{
-    padding:50px 0;
+  .section{
+    padding:48px 0;
   }
 
-  .hero h1{
-    font-size:39px;
+  .section h1,
+  .section h2{
+    font-size:36px;
+    line-height:1.15;
     letter-spacing:-1px;
+    margin-bottom:22px;
+    hyphens:none;
+    word-break:normal;
   }
 
-  .hero p,
   .sub{
     font-size:18px;
+    line-height:1.55;
+    width:100%;
+    max-width:none;
+    text-align:left;
+    hyphens:none;
+    word-break:normal;
+    overflow-wrap:normal;
   }
 
-  .section h2{
-    font-size:34px;
-    letter-spacing:-1px;
+  .section p,
+  .card p{
+    text-align:left;
+    hyphens:none;
+    word-break:normal;
+    overflow-wrap:normal;
   }
 
   .cards,
-  .steps,
-  .faq-grid{
+  .kierunki-grid{
     grid-template-columns:minmax(0,1fr);
+    width:100%;
+  }
+
+  .kierunek-card{
+    grid-column:auto !important;
+    width:100%;
+    min-width:0;
+  }
+
+  .steps{
+    grid-template-columns:1fr;
   }
 
   .nav{
-    min-height:68px;
+    height:68px;
     gap:8px;
   }
 
@@ -487,8 +657,13 @@ footer{
     height:46px;
   }
 
-  .brand b{font-size:16px;}
-  .brand small{font-size:12px;}
+  .brand b{
+    font-size:16px;
+  }
+
+  .brand small{
+    font-size:12px;
+  }
 
   header .cta{
     padding:10px 12px;
@@ -496,12 +671,93 @@ footer{
     white-space:nowrap;
   }
 
+  .panda-banner{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    position:relative;
+  }
+
+  .panda-banner picture{
+    display:block;
+    width:100%;
+  }
+
+  .panda-banner img{
+    position:static;
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:100%;
+  }
+
+  .banner-email{
+    left:8%;
+    top:27%;
+    width:40%;
+    height:7%;
+  }
+
+  .banner-messenger{
+    left:8%;
+    top:34.5%;
+    width:40%;
+    height:7%;
+  }
+
+  .banner-facebook{
+    left:8%;
+    top:42%;
+    width:40%;
+    height:7%;
+  }
+
+  .banner-contact{
+    left:8%;
+    top:90%;
+    width:84%;
+    height:6%;
+  }
+
+  .review-form{
+    padding:22px;
+  }
+
+  .review-button{
+    font-size:16px;
+    padding:15px 12px;
+  }
+
   .contact-actions{
     width:100%;
   }
 
   .contact-actions .cta{
+    width:100%;
     max-width:none;
+  }
+}
+
+/* BARDZO MAŁE TELEFONY */
+
+@media(max-width:380px){
+
+  .section h1,
+  .section h2{
+    font-size:32px;
+  }
+
+  .brand b{
+    font-size:15px;
+  }
+
+  .brand small{
+    font-size:11px;
+  }
+
+  header .cta{
+    padding:9px 10px;
+    font-size:12px;
   }
 }
 
@@ -511,378 +767,588 @@ footer{
 <body>
 
 <header>
+
 <div class="wrap nav">
 
-<a class="brand" href="/">
+<a class="brand" href="#start">
+
 <img src="panda-logo.jpg" alt="Panda Expert">
+
 <div>
 <b>PANDA EXPERT</b>
 <small>Wsparcie Akademickie</small>
 </div>
+
 </a>
 
 <nav>
-<a href="#zakres">Zakres pomocy</a>
-<a href="#programy">Programy</a>
+<a href="#oferta">Oferta</a>
+<a href="#kierunki">Kierunki</a>
+<a href="#narzedzia">Narzędzia</a>
 <a href="#jak">Jak działamy</a>
-<a href="#faq">FAQ</a>
+<a href="#opinie">Opinie</a>
 <a href="#kontakt">Kontakt</a>
 </nav>
 
-<a class="cta" href="#kontakt">Napisz do nas</a>
+<a class="cta" href="#kontakt">
+Napisz do nas
+</a>
 
 </div>
+
 </header>
 
-<main>
+<main id="start">
 
-<!-- HERO -->
+<!-- BANER -->
 
-<section class="hero">
-<div class="wrap hero-grid">
+<section class="panda-banner" aria-label="Panda Expert">
 
-<div>
+<picture>
 
-<div class="eyebrow">📊 Analiza danych i statystyka</div>
+<source
+media="(max-width:520px)"
+srcset="panda-mobile.png">
+
+<img
+src="panda-akcja.png"
+alt="Panda Expert – analiza danych i statystyka">
+
+</picture>
+
+<a
+class="banner-hotspot banner-email"
+href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert"
+aria-label="Napisz e-mail">
+</a>
+
+<a
+class="banner-hotspot banner-messenger"
+href="https://m.me/PisaniePrac.PandaExpert"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Napisz do Panda Expert na Messengerze">
+</a>
+
+<a
+class="banner-hotspot banner-facebook"
+href="https://www.facebook.com/PisaniePrac.PandaExpert"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Odwiedź Panda Expert na Facebooku">
+</a>
+
+<a
+class="banner-hotspot banner-contact"
+href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert"
+aria-label="Kontakt e-mail">
+</a>
+
+</section>
+
+<!-- W CZYM POMAGAMY -->
+
+<section class="section" id="oferta">
+
+<div class="wrap">
 
 <h1>Analiza danych i statystyka</h1>
 
-<p>
-Panda Expert oferuje <strong>wsparcie w analizie danych i statystyce</strong> na potrzeby prac akademickich, badań, ankiet i projektów. Pomagamy w doborze metod, przeprowadzeniu analiz, przygotowaniu tabel i wykresów oraz <strong>interpretacji wyników</strong>.
-</p>
-
-<a class="cta" href="#kontakt">Zapytaj o analizę →</a>
-
-</div>
-
-<div class="hero-box">
-<div class="panda">🐼📊</div>
-<h2>Masz dane, ale nie wiesz co dalej?</h2>
-<p>
-Napisz, czego dotyczy badanie, jakie dane posiadasz i czego potrzebujesz. Dobierzemy odpowiedni zakres wsparcia.
-</p>
-</div>
-
-</div>
-</section>
-
-<!-- ZAKRES -->
-
-<section class="section" id="zakres">
-<div class="wrap">
-
-<h2>W czym możemy pomóc?</h2>
-
 <p class="sub">
-Wsparcie może obejmować zarówno <strong>przygotowanie badania i danych</strong>, jak i dobór odpowiednich metod statystycznych, wykonanie analiz oraz przedstawienie i interpretację uzyskanych wyników.
+Panda Expert oferuje <strong>pomoc w analizie danych i statystyce</strong>, w tym wsparcie w <strong>doborze metod statystycznych, przygotowaniu danych, wykonaniu analiz, tworzeniu tabel i wykresów oraz interpretacji wyników</strong>. Pomagamy również w obsłudze programów takich jak <strong>SPSS, JASP, Jamovi, RStudio i Excel</strong>.
 </p>
 
 <div class="cards">
 
 <article class="card yellow">
-<div class="icon">📝</div>
-<h3>Ankiety i kwestionariusze</h3>
-<p>
-Pomoc w uporządkowaniu ankiet i kwestionariuszy oraz przygotowaniu danych do dalszej analizy.
-</p>
-</article>
 
-<article class="card green">
-<div class="icon">🔬</div>
-<h3>Dobór metod statystycznych</h3>
-<p>
-Wsparcie w wyborze metod analizy odpowiednich do rodzaju danych, pytań badawczych, hipotez i celu badania.
-</p>
-</article>
-
-<article class="card blue">
 <div class="icon">📊</div>
+
 <h3>Analizy statystyczne</h3>
+
 <p>
-Pomoc w wykonaniu analiz opisowych, porównawczych, zależnościowych i innych metod odpowiednich do konkretnego badania.
+Wsparcie w doborze metod i testów statystycznych, przygotowaniu danych do analizy oraz przeprowadzeniu analiz dopasowanych do problemu badawczego.
 </p>
+
 </article>
 
 <article class="card green">
+
 <div class="icon">📈</div>
-<h3>Tabele i wykresy</h3>
+
+<h3>Wyniki, tabele i wykresy</h3>
+
 <p>
-Przygotowanie czytelnych tabel, zestawień i wykresów prezentujących najważniejsze informacje oraz wyniki analiz.
+Pomoc w uporządkowaniu wyników, przygotowaniu tabel i wykresów oraz czytelnym przedstawieniu danych uzyskanych w badaniu.
 </p>
+
 </article>
 
 <article class="card blue">
+
 <div class="icon">🔎</div>
+
 <h3>Interpretacja wyników</h3>
-<p>
-Pomoc w zrozumieniu wyników analizy oraz ich prawidłowym opisaniu w kontekście pytań i hipotez badawczych.
-</p>
-</article>
 
-<article class="card yellow">
-<div class="icon">🗂️</div>
-<h3>Przygotowanie danych</h3>
 <p>
-Porządkowanie zbiorów danych, kodowanie odpowiedzi, przygotowanie zmiennych oraz sprawdzanie danych przed analizą.
+Wsparcie w zrozumieniu rezultatów analiz statystycznych, interpretacji wyników oraz ich powiązaniu z pytaniami badawczymi i hipotezami.
 </p>
+
 </article>
 
 </div>
 
 </div>
+
 </section>
 
-<!-- PROGRAMY -->
+<!-- KIERUNKI -->
 
-<section class="section" id="programy">
+<section class="section" id="kierunki">
+
 <div class="wrap">
 
-<h2>Programy do analizy danych</h2>
+<h2>🎓 Kierunki, w których pomagamy</h2>
 
 <p class="sub">
-Pracujemy z popularnymi narzędziami wykorzystywanymi w <strong>analizie danych, statystyce i badaniach</strong>. Dobór programu zależy od rodzaju danych i zakresu analizy.
+Analizy danych wykorzystuje się na <strong>wielu kierunkach studiów</strong>. Wspieramy projekty i badania z obszarów <strong>społecznych, ekonomicznych, medycznych, technicznych, informatycznych, humanistycznych oraz przyrodniczych</strong>.
+</p>
+
+<div class="kierunki-grid">
+
+<article class="kierunek-card">
+<div class="icon">📚</div>
+<h3>Kierunki humanistyczne</h3>
+<p>
+Filologia polska, filologie obce, historia, filozofia, kulturoznawstwo, językoznawstwo, literaturoznawstwo, archeologia, historia sztuki i inne.
+</p>
+</article>
+
+<article class="kierunek-card">
+<div class="icon">👥</div>
+<h3>Kierunki społeczne</h3>
+<p>
+Pedagogika, psychologia, socjologia, politologia, administracja, bezpieczeństwo wewnętrzne, bezpieczeństwo narodowe, stosunki międzynarodowe, praca socjalna, kryminologia i inne.
+</p>
+</article>
+
+<article class="kierunek-card">
+<div class="icon">💼</div>
+<h3>Kierunki ekonomiczne i biznesowe</h3>
+<p>
+Ekonomia, finanse i rachunkowość, zarządzanie, marketing, logistyka, analityka gospodarcza, biznes międzynarodowy, przedsiębiorczość, zarządzanie zasobami ludzkimi i inne.
+</p>
+</article>
+
+<article class="kierunek-card">
+<div class="icon">🩺</div>
+<h3>Kierunki medyczne i związane ze zdrowiem</h3>
+<p>
+Pielęgniarstwo, położnictwo, fizjoterapia, ratownictwo medyczne, zdrowie publiczne, dietetyka, kosmetologia, farmacja, analityka medyczna i inne.
+</p>
+</article>
+
+<article class="kierunek-card">
+<div class="icon">⚙️</div>
+<h3>Kierunki techniczne i inżynierskie</h3>
+<p>
+Budownictwo, mechanika i budowa maszyn, automatyka i robotyka, mechatronika, elektrotechnika, elektronika, energetyka, inżynieria produkcji, transport, architektura, geodezja i kartografia i inne.
+</p>
+</article>
+
+<article class="kierunek-card">
+<div class="icon">💻</div>
+<h3>Kierunki informatyczne</h3>
+<p>
+Informatyka, informatyka stosowana, programowanie, cyberbezpieczeństwo, analiza danych, sztuczna inteligencja, teleinformatyka, technologie informacyjne, informatyka i ekonometria i inne.
+</p>
+</article>
+
+<article class="kierunek-card">
+<div class="icon">🌿</div>
+<h3>Kierunki przyrodnicze</h3>
+<p>
+Biologia, biotechnologia, chemia, ochrona środowiska, geografia, geologia, rolnictwo, leśnictwo, ogrodnictwo, zootechnika, gospodarka przestrzenna i inne.
+</p>
+</article>
+
+</div>
+
+<p class="sub" style="margin-top:32px;margin-bottom:0;">
+<strong>Nie widzisz swojego kierunku na liście?</strong> Napisz do nas. Zakres wsparcia w analizie danych ustalamy indywidualnie w zależności od rodzaju danych, metodologii i celu badania.
+</p>
+
+</div>
+
+</section>
+
+<!-- NARZĘDZIA -->
+
+<section class="section" id="narzedzia">
+
+<div class="wrap">
+
+<h2>Programy i narzędzia</h2>
+
+<p class="sub">
+Pomagamy w analizie danych z wykorzystaniem <strong>popularnych programów statystycznych i analitycznych</strong>. W zależności od rodzaju danych i metodologii wspieramy pracę między innymi w <strong>SPSS, JASP, Jamovi, RStudio oraz Excelu</strong>. Pomagamy również w korzystaniu z innych narzędzi – jeśli nie widzisz swojego programu na liście, <strong>napisz do nas</strong>.
 </p>
 
 <div class="tools">
+
 <span class="pill">SPSS</span>
 <span class="pill">JASP</span>
 <span class="pill">Jamovi</span>
 <span class="pill">RStudio</span>
-<span class="pill">R</span>
 <span class="pill">Excel</span>
-<span class="pill">i inne narzędzia</span>
+<span class="pill">Word</span>
+<span class="pill">PowerPoint</span>
+<span class="pill">MATLAB</span>
+<span class="pill">QGIS</span>
+<span class="pill">i wiele innych…</span>
+
 </div>
 
 </div>
+
 </section>
 
-<!-- BADANIA -->
-
-<section class="section">
-<div class="wrap">
-
-<h2>Od danych do wyników</h2>
-
-<p class="sub">
-Dobra analiza zaczyna się od właściwego przygotowania danych i dopasowania metody do problemu badawczego.
-</p>
-
-<div class="content-grid">
-
-<div class="content-box">
-
-<h3>🔬 Przygotowanie analizy</h3>
-
-<p>
-Pomagamy uporządkować <strong>pytania badawcze, hipotezy i zmienne</strong> oraz sprawdzić, jakie metody analizy mogą być odpowiednie dla posiadanych danych.
-</p>
-
-<p>
-Możemy również pomóc w przygotowaniu i uporządkowaniu zbioru danych przed rozpoczęciem analizy.
-</p>
-
-</div>
-
-<div class="content-box">
-
-<h3>📊 Wyniki i interpretacja</h3>
-
-<p>
-Po wykonaniu analizy pomagamy zrozumieć otrzymane wyniki oraz określić, które informacje są najważniejsze z punktu widzenia badania.
-</p>
-
-<p>
-Wsparcie może obejmować również <strong>tabele, wykresy, opis wyników i ich interpretację</strong>.
-</p>
-
-</div>
-
-</div>
-
-</div>
-</section>
-
-<!-- ZASTOSOWANIA -->
-
-<section class="section">
-<div class="wrap">
-
-<h2>Do czego wykorzystujemy analizy?</h2>
-
-<p class="sub">
-Analiza danych może być potrzebna w wielu rodzajach projektów i na różnych kierunkach studiów.
-</p>
-
-<div class="cards">
-
-<article class="card green">
-<div class="icon">🎓</div>
-<h3>Prace akademickie</h3>
-<p>
-Analiza danych wykorzystywanych w pracach licencjackich, magisterskich, inżynierskich i innych projektach akademickich.
-</p>
-</article>
-
-<article class="card yellow">
-<div class="icon">📋</div>
-<h3>Badania ankietowe</h3>
-<p>
-Opracowanie danych pochodzących z ankiet, kwestionariuszy i innych narzędzi badawczych.
-</p>
-</article>
-
-<article class="card blue">
-<div class="icon">💼</div>
-<h3>Projekty i analizy</h3>
-<p>
-Wsparcie w analizie danych wykorzystywanych również w projektach biznesowych, społecznych, technicznych i badawczych.
-</p>
-</article>
-
-</div>
-
-</div>
-</section>
-
-<!-- PROCES -->
+<!-- JAK DZIAŁAMY -->
 
 <section class="section process" id="jak">
+
 <div class="wrap">
 
-<h2>Jak wygląda współpraca?</h2>
+<h2>Jak działamy?</h2>
 
 <p class="sub">
-Zakres analizy ustalamy na podstawie rodzaju danych, celu badania i oczekiwanych wyników.
+Najpierw poznajemy cel badania, rodzaj danych i zakres potrzebnej analizy, a następnie ustalamy odpowiednie metody oraz sposób działania.
 </p>
 
 <div class="steps">
 
 <div class="step">
 <div class="num">1</div>
-<strong>Przesyłasz informacje</strong>
-<p>Opisujesz badanie, dane, pytania lub hipotezy oraz termin.</p>
+<b>Opisujesz badanie</b>
+<p>Przesyłasz informacje o badaniu, danych, pytaniach badawczych, hipotezach oraz wymaganiach.</p>
 </div>
 
 <div class="step">
 <div class="num">2</div>
-<strong>Sprawdzamy dane</strong>
-<p>Analizujemy strukturę materiału i możliwe metody postępowania.</p>
+<b>Analizujemy dane</b>
+<p>Sprawdzamy strukturę danych i dobieramy metody statystyczne odpowiednie do celu badania.</p>
 </div>
 
 <div class="step">
 <div class="num">3</div>
-<strong>Ustalamy zakres</strong>
-<p>Dobieramy odpowiednie analizy i sposób przedstawienia wyników.</p>
+<b>Ustalamy zakres</b>
+<p>Określamy potrzebne analizy, tabele, wykresy oraz zakres wsparcia w interpretacji wyników.</p>
 </div>
 
 <div class="step">
 <div class="num">4</div>
-<strong>Analizujemy wyniki</strong>
-<p>Pomagamy wykonać analizę oraz zrozumieć otrzymane rezultaty.</p>
+<b>Działamy</b>
+<p>Pomagamy w przeprowadzeniu analizy oraz zrozumieniu i uporządkowaniu uzyskanych wyników.</p>
 </div>
 
 </div>
 
 </div>
+
+</section>
+
+<!-- DLACZEGO PANDA -->
+
+<section class="section">
+
+<div class="wrap">
+
+<h2>Dlaczego Panda Expert?</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>✓ Indywidualny dobór metod</h3>
+
+<p>
+Rodzaj analizy dopasowujemy do danych, problemu badawczego, hipotez oraz wymagań konkretnego projektu.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>✓ Analiza i interpretacja</h3>
+
+<p>
+Pomagamy nie tylko w wykonaniu obliczeń, ale również w zrozumieniu wyników, tabel, wykresów i rezultatów testów statystycznych.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>✓ Popularne programy</h3>
+
+<p>
+Wspieramy analizę danych między innymi w SPSS, JASP, Jamovi, RStudio i Excelu oraz pracę z innymi narzędziami analitycznymi.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 <!-- FAQ -->
 
 <section class="section" id="faq">
+
 <div class="wrap">
 
 <h2>Najczęstsze pytania</h2>
 
-<div class="faq-grid">
+<div class="cards">
 
-<div class="faq">
-<h3>Czy pomagacie w analizie danych w SPSS?</h3>
+<article class="card">
+
+<h3>Czy pomagacie w analizie danych statystycznych?</h3>
+
 <p>
-Tak. Zakres wsparcia może obejmować przygotowanie danych, dobór metod statystycznych, wykonanie analiz oraz interpretację wyników w SPSS.
+Tak. Zakres wsparcia może obejmować przygotowanie danych, dobór metod statystycznych, przeprowadzenie analiz, przygotowanie tabel i wykresów oraz interpretację otrzymanych wyników.
 </p>
-</div>
 
-<div class="faq">
-<h3>Czy pracujecie również w JASP i Jamovi?</h3>
+</article>
+
+<article class="card">
+
+<h3>W jakich programach wykonujecie analizy?</h3>
+
 <p>
-Tak. W zależności od rodzaju badania możemy pracować między innymi w JASP, Jamovi, RStudio, R oraz Excelu.
+Pomagamy w pracy z programami takimi jak SPSS, JASP, Jamovi, RStudio i Excel. Dobór narzędzia zależy od rodzaju danych, metodologii oraz planowanej analizy.
 </p>
-</div>
 
-<div class="faq">
+</article>
+
+<article class="card">
+
 <h3>Czy pomagacie dobrać test statystyczny?</h3>
-<p>
-Tak. Dobór metody zależy między innymi od rodzaju zmiennych, charakteru danych, hipotez i celu badania.
-</p>
-</div>
 
-<div class="faq">
-<h3>Czy pomagacie przy analizie ankiet?</h3>
 <p>
-Tak. Pomoc może obejmować przygotowanie danych z ankiety, kodowanie odpowiedzi, analizę wyników oraz przygotowanie tabel i wykresów.
+Tak. Dobór testu zależy między innymi od rodzaju zmiennych, liczby badanych grup, rozkładu danych, hipotez oraz celu badania.
 </p>
-</div>
 
-<div class="faq">
+</article>
+
+<article class="card">
+
 <h3>Czy pomagacie interpretować wyniki?</h3>
+
 <p>
-Tak. Wyjaśniamy znaczenie uzyskanych wyników i pomagamy powiązać je z pytaniami oraz hipotezami badawczymi.
+Tak. Pomagamy zrozumieć rezultaty analiz, wartości uzyskane w testach statystycznych oraz znaczenie wyników w odniesieniu do pytań badawczych i hipotez.
 </p>
-</div>
 
-<div class="faq">
-<h3>Co wysłać, żeby zapytać o analizę?</h3>
+</article>
+
+<article class="card">
+
+<h3>Czy pomagacie przygotować tabele i wykresy?</h3>
+
 <p>
-Najlepiej przesłać krótki opis badania, pytania lub hipotezy, informacje o posiadanych danych oraz termin.
+Tak. Wsparcie może obejmować uporządkowanie wyników oraz przygotowanie czytelnych tabel, zestawień i wykresów dopasowanych do charakteru danych.
 </p>
-</div>
+
+</article>
+
+<article class="card">
+
+<h3>Jak rozpocząć współpracę?</h3>
+
+<p>
+Skontaktuj się z nami w najwygodniejszy dla Ciebie sposób. Możesz napisać na
+<a href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert"><b>teksty.panda.express@gmail.com</b></a>, wysłać wiadomość przez
+<a href="https://m.me/PisaniePrac.PandaExpert"
+target="_blank"
+rel="noopener noreferrer"><b>Messenger</b></a>
+lub odwiedzić naszą stronę na
+<a href="https://www.facebook.com/PisaniePrac.PandaExpert"
+target="_blank"
+rel="noopener noreferrer"><b>Facebooku</b></a>.
+Podaj rodzaj danych, temat badania, zakres potrzebnej analizy oraz termin. Po zapoznaniu się z informacjami ustalimy możliwy zakres wsparcia.
+</p>
+
+</article>
 
 </div>
 
 </div>
+
+</section>
+
+<!-- OPINIE -->
+
+<section class="section reviews" id="opinie">
+
+<div class="wrap">
+
+<h2>🐼 Strefa opinii 🐼</h2>
+
+<div class="review-grid">
+
+<div>
+
+<p class="sub">
+Wiemy, że wiele osób nie wystawia opinii, bo nie chce, żeby kolega z roku, wykładowca, ciocia Grażyna albo przypadkowy człowiek z internetu zobaczył ich komentarz. 😅
+</p>
+
+<p>
+<b>Tutaj możesz wypowiedzieć się ANONIMOWO. 🥷</b>
+</p>
+
+<p>
+Nie będziemy pytać kim jesteś, skąd jesteś ani dlaczego pracujesz nad projektem o 23:57 dzień przed terminem. 🤫
+</p>
+
+<p>
+Liczy się dla nas szczera opinia, a nie dane autora.
+</p>
+
+</div>
+
+<div class="review-form">
+
+<h3>⭐ Zostaw swoją opinię</h3>
+
+<div class="review-stars">
+⭐⭐⭐⭐⭐
+</div>
+
+<p>
+Kliknij poniżej, aby dodać anonimową opinię. Otworzy się formularz, przez który Twoja wiadomość trafi bezpośrednio do naszej tablicy opinii.
+</p>
+
+<a
+class="review-button"
+href="https://padlet.com/tekstypandaexpress/submission-request/8wOpvY2Dn0VBb6AY"
+target="_blank"
+rel="noopener noreferrer">
+⭐ DODAJ SWOJĄ OPINIĘ
+</a>
+
+</div>
+
+</div>
+
+<!-- SLAJDY Z OPINIAMI -->
+
+<div style="margin-top:50px;">
+
+<h3 style="font-size:30px;margin:0 0 22px;font-weight:1000;">
+💬 Opinie klientów
+</h3>
+
+<div
+class="padlet-slideshow-embed"
+style="
+width:100%;
+height:650px;
+border:3px solid #111;
+border-radius:18px;
+box-sizing:border-box;
+overflow:hidden;
+background:#fff;
+box-shadow:6px 6px 0 #111;
+">
+
+<p style="padding:0;margin:0;width:100%;height:100%;">
+
+<iframe
+src="https://padlet.com/embed/459tmoe5b62t4oh9/slideshow?autoplay=1&loop=1&duration=2"
+frameborder="0"
+allow="clipboard-write"
+loading="lazy"
+title="Opinie klientów Panda Expert"
+style="
+width:100%;
+height:100%;
+display:block;
+padding:0;
+margin:0;
+border:0;
+">
+</iframe>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 <!-- KONTAKT -->
 
 <section class="section contact" id="kontakt">
+
 <div class="wrap contactbox">
 
 <div>
 
-<h2>Potrzebujesz pomocy z analizą danych?</h2>
+<h2>Masz dane do analizy? Napisz 🐼</h2>
 
 <p class="sub">
-Napisz, czego dotyczy badanie, jakie dane posiadasz, jaki zakres analizy jest potrzebny oraz jaki masz termin.
+Opisz krótko rodzaj danych, cel badania, zakres potrzebnej analizy i termin. Odpowiemy na każdą wiadomość.
 </p>
 
 <div class="email">
-<a class="contact-link"
-href="mailto:teksty.panda.express@gmail.com?subject=Analiza%20danych%20-%20Panda%20Expert">
+
+<a
+class="contact-link"
+href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert">
 teksty.panda.express@gmail.com
 </a>
+
 </div>
 
-<p class="disclaimer">
-Panda Expert świadczy usługi konsultacyjne, edukacyjne i analityczne. W przypadku projektów akademickich wsparcie służy rozwijaniu i doskonaleniu własnej pracy klienta.
+<p class="note">
+
+Facebook:
+
+<a
+class="contact-link"
+href="https://www.facebook.com/PisaniePrac.PandaExpert"
+target="_blank"
+rel="noopener noreferrer">
+PisaniePrac.PandaExpert
+</a>
+
 </p>
 
 </div>
 
 <div class="contact-actions">
 
-<a class="cta"
-href="mailto:teksty.panda.express@gmail.com?subject=Analiza%20danych%20-%20Panda%20Expert&body=Dzień%20dobry%2C%0A%0ARodzaj%20badania%3A%20%0ADane%3A%20%0AZakres%20analizy%3A%20%0ATermin%3A%20%0A%0APozdrawiam">
+<a
+class="cta"
+href="mailto:teksty.panda.express@gmail.com?subject=Zapytanie%20-%20Panda%20Expert&body=Dzień%20dobry%2C%0A%0ATemat%3A%20%0AZakres%20wsparcia%3A%20%0ATermin%3A%20%0A%0APozdrawiam">
 Wyślij e-mail →
 </a>
 
-<a class="cta"
+<a
+class="cta"
 href="https://m.me/PisaniePrac.PandaExpert"
 target="_blank"
 rel="noopener noreferrer">
 Napisz na Messengerze →
 </a>
 
-<a class="cta"
+<a
+class="cta"
 href="https://www.facebook.com/PisaniePrac.PandaExpert"
 target="_blank"
 rel="noopener noreferrer">
@@ -892,15 +1358,23 @@ Odwiedź Facebooka →
 </div>
 
 </div>
+
 </section>
 
 </main>
 
 <footer>
+
 <div class="wrap footer">
+
 <b>© 2026 Panda Expert – Wsparcie Akademickie</b>
-<span>Kontakt: teksty.panda.express@gmail.com</span>
+
+<span>
+Kontakt: teksty.panda.express@gmail.com
+</span>
+
 </div>
+
 </footer>
 
 </body>
